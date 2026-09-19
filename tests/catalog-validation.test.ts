@@ -11,11 +11,13 @@ const sea = load("src/data/suppliers/southeast-asia.json");
 const eta = load("src/data/suppliers/europe-turkey-africa.json");
 const china = load("src/data/suppliers/china.json");
 const indiaSriLanka = load("src/data/suppliers/india-sri-lanka.json");
+const latam = load("src/data/suppliers/latin-america.json");
 const datasets: [string, CatalogFileInput][] = [
   ["southeast-asia", sea],
   ["europe-turkey-africa", eta],
   ["china", china],
   ["india-sri-lanka", indiaSriLanka],
+  ["latin-america", latam],
 ];
 const fixtures = [
   "tests/fixtures/catalog/missing-source/fixture-region.json",
@@ -65,16 +67,27 @@ describe("catalog validation", () => {
     ]);
   });
 
-  it("validates all regions together (165 source rows)", () => {
-    const result = validateCatalogFiles([sea, eta, china, indiaSriLanka]);
+  it("passes the 39 remapped Latin America rows", () => {
+    const result = validateCatalogFiles([latam]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(165);
+    expect(result.supplierCount).toBe(39);
+    expect(result.perRegionCounts).toEqual([
+      { regionId: "latin-america", region: "Latin America", supplierCount: 39 },
+    ]);
+  });
+
+  it("validates all regions together (204 source rows)", () => {
+    const result = validateCatalogFiles([sea, eta, china, indiaSriLanka, latam]);
+    expect(result.issues).toEqual([]);
+    expect(result.valid).toBe(true);
+    expect(result.supplierCount).toBe(204);
     expect(result.perRegionCounts).toEqual([
       { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
       { regionId: "europe-turkey-africa", region: "Europe, Turkey and Africa", supplierCount: 42 },
       { regionId: "china", region: "China", supplierCount: 50 },
       { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
+      { regionId: "latin-america", region: "Latin America", supplierCount: 39 },
     ]);
   });
 
