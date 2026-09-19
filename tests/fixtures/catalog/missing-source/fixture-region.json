@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "regionId": "fixture-region",
+  "region": "Fixture",
+  "retrieved": "2026-09-19",
+  "suppliers": [
+    {
+      "id": "fixture-region-001",
+      "regionId": "fixture-region",
+      "name": { "value": "Fixture Supplier", "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } },
+      "website": { "value": "https://example.com/", "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } },
+      "hq": { "value": "Unknown City" },
+      "country": { "value": "Fixture Country", "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } },
+      "regionsServed": null,
+      "categories": { "value": ["starches"], "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } },
+      "ingredients": { "value": ["tapioca starch"], "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } },
+      "type": null,
+      "certifications": { "value": [], "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        { "tier": "quote-only", "source": { "url": "https://example.com/", "retrievedAt": "2026-09-19" } }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "sources": [{ "url": "https://example.com/", "retrievedAt": "2026-09-19" }]
+    }
+  ]
+}
