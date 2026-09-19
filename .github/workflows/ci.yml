@@ -40,6 +40,9 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
+      - name: Validate supplier catalog
+        run: npm run validate:catalog
+
       - name: Apply migrations (PostgreSQL 16)
         run: node supabase/migrate.mjs
 
