@@ -86,7 +86,7 @@ const confidenceSchema: ZodType<Confidence> = z.enum([
   "Low",
 ]);
 
-const supplierSchema: ZodType<Supplier> = z
+export const supplierSchema: ZodType<Supplier> = z
   .object({
     id: kebabId,
     regionId: kebabId,
