@@ -10,12 +10,20 @@ describe("catalog merge", () => {
   it("emits correct per-region counts", () => {
     expect(regionCounts).toEqual([
       { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
+      {
+        regionId: "europe-turkey-africa",
+        region: "Europe, Turkey and Africa",
+        supplierCount: 42,
+      },
     ]);
-    expect(regionalDatasets.map((r) => r.regionId)).toEqual(["southeast-asia"]);
+    expect(regionalDatasets.map((r) => r.regionId)).toEqual([
+      "southeast-asia",
+      "europe-turkey-africa",
+    ]);
   });
 
   it("exports the combined dataset with a matching total", () => {
-    expect(catalogDataset.totalCount).toBe(41);
+    expect(catalogDataset.totalCount).toBe(83);
     expect(catalogDataset.suppliers).toHaveLength(catalogSuppliers.length);
     expect(catalogDataset.regionCounts).toEqual([...regionCounts]);
   });
