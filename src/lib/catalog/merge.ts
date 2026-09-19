@@ -1,0 +1,39 @@
+import southeastAsiaJson from "../../data/suppliers/southeast-asia.json";
+import { regionalDatasetSchema } from "./schema";
+import type { CatalogDataset, RegionalDataset, RegionCount, Supplier } from "./types";
+
+/** Parses a regional JSON import, so an invalid dataset fails the build. */
+function parseRegionalDataset(json: unknown, fileName: string): RegionalDataset {
+  const result = regionalDatasetSchema.safeParse(json);
+  if (!result.success) {
+    const detail = result.error.issues
+      .slice(0, 5)
+      .map((i) => `${i.path.join(".") || "(root)"}: ${i.message}`)
+      .join("; ");
+    throw new Error(`Invalid regional catalog data in ${fileName}: ${detail}`);
+  }
+  return result.data;
+}
+
+const southeastAsia = parseRegionalDataset(southeastAsiaJson, "southeast-asia.json");
+
+/** All regional datasets in release order — new regions append here. */
+export const regionalDatasets: readonly RegionalDataset[] = [southeastAsia];
+
+/** Every supplier across regions, flat. */
+export const catalogSuppliers: readonly Supplier[] = regionalDatasets.flatMap(
+  (dataset) => dataset.suppliers
+);
+
+export const regionCounts: readonly RegionCount[] = regionalDatasets.map((dataset) => ({
+  regionId: dataset.regionId,
+  region: dataset.region,
+  supplierCount: dataset.suppliers.length,
+}));
+
+/** The combined, search-ready catalog. */
+export const catalogDataset: CatalogDataset = {
+  suppliers: [...catalogSuppliers],
+  regionCounts: [...regionCounts],
+  totalCount: catalogSuppliers.length,
+};
