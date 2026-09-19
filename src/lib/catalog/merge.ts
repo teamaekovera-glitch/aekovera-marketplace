@@ -1,3 +1,4 @@
+import europeTurkeyAfricaJson from "../../data/suppliers/europe-turkey-africa.json";
 import southeastAsiaJson from "../../data/suppliers/southeast-asia.json";
 import { regionalDatasetSchema } from "./schema";
 import type { CatalogDataset, RegionalDataset, RegionCount, Supplier } from "./types";
@@ -15,10 +16,17 @@ function parseRegionalDataset(json: unknown, fileName: string): RegionalDataset 
   return result.data;
 }
 
+const europeTurkeyAfrica = parseRegionalDataset(
+  europeTurkeyAfricaJson,
+  "europe-turkey-africa.json"
+);
 const southeastAsia = parseRegionalDataset(southeastAsiaJson, "southeast-asia.json");
 
 /** All regional datasets in release order — new regions append here. */
-export const regionalDatasets: readonly RegionalDataset[] = [southeastAsia];
+export const regionalDatasets: readonly RegionalDataset[] = [
+  southeastAsia,
+  europeTurkeyAfrica,
+];
 
 /** Every supplier across regions, flat. */
 export const catalogSuppliers: readonly Supplier[] = regionalDatasets.flatMap(
