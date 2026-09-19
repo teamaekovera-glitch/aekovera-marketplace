@@ -16,17 +16,19 @@ describe("catalog merge", () => {
         supplierCount: 42,
       },
       { regionId: "china", region: "China", supplierCount: 50 },
+      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
     ]);
     expect(regionalDatasets.map((r) => r.regionId)).toEqual([
       "southeast-asia",
       "europe-turkey-africa",
       "china",
+      "india-sri-lanka",
     ]);
   });
 
   it("exports the combined dataset with a matching total", () => {
-    // 133 dataset rows minus the 10 quarantined China rows (41 + 42 + 50 - 10).
-    expect(catalogDataset.totalCount).toBe(123);
+    // 165 dataset rows minus the 10 quarantined China rows (41 + 42 + 50 + 32 - 10).
+    expect(catalogDataset.totalCount).toBe(155);
     expect(catalogDataset.suppliers).toHaveLength(catalogSuppliers.length);
     expect(catalogDataset.regionCounts).toEqual([...regionCounts]);
   });

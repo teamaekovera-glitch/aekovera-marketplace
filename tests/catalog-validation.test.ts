@@ -10,10 +10,12 @@ function load(path: string): CatalogFileInput {
 const sea = load("src/data/suppliers/southeast-asia.json");
 const eta = load("src/data/suppliers/europe-turkey-africa.json");
 const china = load("src/data/suppliers/china.json");
+const indiaSriLanka = load("src/data/suppliers/india-sri-lanka.json");
 const datasets: [string, CatalogFileInput][] = [
   ["southeast-asia", sea],
   ["europe-turkey-africa", eta],
   ["china", china],
+  ["india-sri-lanka", indiaSriLanka],
 ];
 const fixtures = [
   "tests/fixtures/catalog/missing-source/fixture-region.json",
@@ -53,14 +55,26 @@ describe("catalog validation", () => {
     ]);
   });
 
-  it("validates both regions together (83 suppliers)", () => {
-    const result = validateCatalogFiles([sea, eta]);
+  it("passes the 32 normalized India/Sri Lanka rows", () => {
+    const result = validateCatalogFiles([indiaSriLanka]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(83);
+    expect(result.supplierCount).toBe(32);
+    expect(result.perRegionCounts).toEqual([
+      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
+    ]);
+  });
+
+  it("validates all regions together (165 source rows)", () => {
+    const result = validateCatalogFiles([sea, eta, china, indiaSriLanka]);
+    expect(result.issues).toEqual([]);
+    expect(result.valid).toBe(true);
+    expect(result.supplierCount).toBe(165);
     expect(result.perRegionCounts).toEqual([
       { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
       { regionId: "europe-turkey-africa", region: "Europe, Turkey and Africa", supplierCount: 42 },
+      { regionId: "china", region: "China", supplierCount: 50 },
+      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
     ]);
   });
 
@@ -299,5 +313,60 @@ describe("china dossier fidelity (art_VjN8Y0Ge)", () => {
       if (!supplier.quarantined) continue;
       expect(supplier.quarantined.reason.trim().length, `${supplier.id}: empty quarantine reason`).toBeGreaterThan(0);
     }
+  });
+});
+
+describe("india-sri-lanka dossier fidelity (art_GfNGlM9s)", () => {
+  const dataset = indiaSriLanka.json as {
+    regionId: string;
+    region: string;
+    retrieved: string;
+    documentArtifact?: string;
+    suppliers: {
+      id: string;
+      priceSignals: { tier: string; value?: string; source: { url: string } }[];
+    }[];
+    priceSignals: { tier: string; value?: string; source: { url: string } }[];
+  };
+
+  it("pins the dossier artifact, region identity, and retrieval date", () => {
+    expect(dataset.regionId).toBe("india-sri-lanka");
+    expect(dataset.region).toBe("India & Sri Lanka");
+    expect(dataset.retrieved).toBe("2026-09-19");
+    expect(dataset.documentArtifact).toBe("art_GfNGlM9s");
+  });
+
+  it("carries all 32 rows with sequential dossier ordinals", () => {
+    expect(dataset.suppliers).toHaveLength(32);
+    dataset.suppliers.forEach((supplier, i) => {
+      expect(supplier.id).toBe(`india-sri-lanka-${String(i + 1).padStart(3, "0")}`);
+    });
+  });
+
+  it("labels marketplace-listed price signals with canonical IndiaMART URLs, never as supplier rows", () => {
+    // IndiaMART evidence stays region-level: no supplier row presents a
+    // marketplace listing as its own price signal (Rulebook B1 — never
+    // supplier-published).
+    for (const supplier of dataset.suppliers) {
+      for (const signal of supplier.priceSignals) {
+        expect(signal.tier, supplier.id).not.toBe("marketplace-listed");
+      }
+    }
+
+    const regionSignals = dataset.priceSignals ?? [];
+    expect(regionSignals.length).toBeGreaterThan(0);
+    for (const signal of regionSignals) {
+      if (signal.tier === "marketplace-listed") {
+        expect(signal.value, signal.source.url).toBeTruthy();
+        expect(signal.source.url, signal.value).toMatch(/^https:\/\/(www\.)?indiamart\.com\//);
+      }
+    }
+
+    // Own-site published price keeps the supplier-published tier — the
+    // IndiaMART-format profile page lives on the company's own domain, not
+    // on the marketplace.
+    const angel = dataset.suppliers.find((s) => s.id === "india-sri-lanka-021");
+    expect(angel?.priceSignals[0]?.tier).toBe("supplier-published");
+    expect(angel?.priceSignals[0]?.source.url).toContain("angelstarchandfood.com");
   });
 });
