@@ -1,6 +1,7 @@
 import chinaJson from "../../data/suppliers/china.json";
 import europeTurkeyAfricaJson from "../../data/suppliers/europe-turkey-africa.json";
 import indiaSriLankaJson from "../../data/suppliers/india-sri-lanka.json";
+import latinAmericaJson from "../../data/suppliers/latin-america.json";
 import southeastAsiaJson from "../../data/suppliers/southeast-asia.json";
 import { regionalDatasetSchema } from "./schema";
 import type { CatalogDataset, RegionalDataset, RegionCount, Supplier } from "./types";
@@ -25,6 +26,7 @@ const europeTurkeyAfrica = parseRegionalDataset(
 const southeastAsia = parseRegionalDataset(southeastAsiaJson, "southeast-asia.json");
 const china = parseRegionalDataset(chinaJson, "china.json");
 const indiaSriLanka = parseRegionalDataset(indiaSriLankaJson, "india-sri-lanka.json");
+const latinAmerica = parseRegionalDataset(latinAmericaJson, "latin-america.json");
 
 /** All regional datasets in release order — new regions append here. */
 export const regionalDatasets: readonly RegionalDataset[] = [
@@ -32,6 +34,7 @@ export const regionalDatasets: readonly RegionalDataset[] = [
   europeTurkeyAfrica,
   china,
   indiaSriLanka,
+  latinAmerica,
 ];
 
 /**
