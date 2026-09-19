@@ -175,6 +175,25 @@ describe("catalog validation", () => {
       }
     }
 
+    // Dossier summary table marks exactly 10 rows Supplier-published (rows 1, 4, 6, 7,
+    // 8, 10, 31, 34, 36, 37) — BulkSupplements' pricing cell is "Retail e-commerce".
+    expect(
+      dataset.suppliers
+        .filter((s) => s.priceSignals.some((p) => p.tier === "supplier-published"))
+        .map((s) => s.id)
+    ).toEqual([
+      "us-canada-001",
+      "us-canada-004",
+      "us-canada-006",
+      "us-canada-007",
+      "us-canada-008",
+      "us-canada-010",
+      "us-canada-031",
+      "us-canada-034",
+      "us-canada-036",
+      "us-canada-037",
+    ]);
+
     // Supplier-published figures stay supplier-published, cited to the supplier's own pages.
     const royal = dataset.suppliers.find((s) => s.id === "us-canada-001");
     expect(royal?.priceSignals[0]?.tier).toBe("supplier-published");

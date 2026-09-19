@@ -3563,7 +3563,7 @@
       },
       "priceSignals": [
         {
-          "tier": "supplier-published",
+          "tier": "quote-only",
           "note": "published retail e-commerce pricing (per-unit SKUs); bulk quote-only",
           "source": {
             "url": "https://www.bulksupplements.com/",
