@@ -1,3 +1,4 @@
+import chinaJson from "../../data/suppliers/china.json";
 import europeTurkeyAfricaJson from "../../data/suppliers/europe-turkey-africa.json";
 import southeastAsiaJson from "../../data/suppliers/southeast-asia.json";
 import { regionalDatasetSchema } from "./schema";
@@ -21,16 +22,21 @@ const europeTurkeyAfrica = parseRegionalDataset(
   "europe-turkey-africa.json"
 );
 const southeastAsia = parseRegionalDataset(southeastAsiaJson, "southeast-asia.json");
+const china = parseRegionalDataset(chinaJson, "china.json");
 
 /** All regional datasets in release order — new regions append here. */
 export const regionalDatasets: readonly RegionalDataset[] = [
   southeastAsia,
   europeTurkeyAfrica,
+  china,
 ];
 
-/** Every supplier across regions, flat. */
-export const catalogSuppliers: readonly Supplier[] = regionalDatasets.flatMap(
-  (dataset) => dataset.suppliers
+/**
+ * Public catalog export: quarantined rows (marketplace-tier listings, directory-only
+ * profiles) stay out of every export — regionCounts below remain dataset-level.
+ */
+export const catalogSuppliers: readonly Supplier[] = regionalDatasets.flatMap((dataset) =>
+  dataset.suppliers.filter((supplier) => !supplier.quarantined)
 );
 
 export const regionCounts: readonly RegionCount[] = regionalDatasets.map((dataset) => ({

@@ -9,9 +9,11 @@ function load(path: string): CatalogFileInput {
 
 const sea = load("src/data/suppliers/southeast-asia.json");
 const eta = load("src/data/suppliers/europe-turkey-africa.json");
+const china = load("src/data/suppliers/china.json");
 const datasets: [string, CatalogFileInput][] = [
   ["southeast-asia", sea],
   ["europe-turkey-africa", eta],
+  ["china", china],
 ];
 const fixtures = [
   "tests/fixtures/catalog/missing-source/fixture-region.json",
@@ -38,6 +40,16 @@ describe("catalog validation", () => {
     expect(result.supplierCount).toBe(42);
     expect(result.perRegionCounts).toEqual([
       { regionId: "europe-turkey-africa", region: "Europe, Turkey and Africa", supplierCount: 42 },
+    ]);
+  });
+
+  it("passes the 50 normalized China rows", () => {
+    const result = validateCatalogFiles([china]);
+    expect(result.issues).toEqual([]);
+    expect(result.valid).toBe(true);
+    expect(result.supplierCount).toBe(50);
+    expect(result.perRegionCounts).toEqual([
+      { regionId: "china", region: "China", supplierCount: 50 },
     ]);
   });
 
@@ -204,5 +216,88 @@ describe("europe-turkey-africa dossier fidelity (art_KI4Y9iWa)", () => {
       }
     }
     expect(quoteOnly + figureBacked).toBe(42);
+  });
+});
+
+describe("china dossier fidelity (art_VjN8Y0Ge)", () => {
+  const dataset = china.json as {
+    regionId: string;
+    region: string;
+    retrieved: string;
+    documentArtifact?: string;
+    suppliers: {
+      id: string;
+      confidence: string;
+      sources: { url: string; retrievedAt: string }[];
+      priceSignals: { tier: string; value?: string }[];
+      quarantined?: { reason: string; note?: string };
+    }[];
+  };
+
+  it("pins the dossier artifact, region identity, and retrieval date", () => {
+    expect(dataset.regionId).toBe("china");
+    expect(dataset.region).toBe("China");
+    expect(dataset.retrieved).toBe("2026-09-19");
+    expect(dataset.documentArtifact).toBe("art_VjN8Y0Ge");
+  });
+
+  it("carries all 50 rows with sequential dossier ordinals", () => {
+    expect(dataset.suppliers).toHaveLength(50);
+    dataset.suppliers.forEach((supplier, i) => {
+      expect(supplier.id).toBe(`china-${String(i + 1).padStart(3, "0")}`);
+    });
+  });
+
+  it("records every row source as read on the dossier retrieval date", () => {
+    for (const supplier of dataset.suppliers) {
+      expect(supplier.sources.length, supplier.id).toBeGreaterThan(0);
+      for (const source of supplier.sources) {
+        expect(source.url, supplier.id).toMatch(/^https?:\/\//);
+        expect(source.retrievedAt, supplier.id).toBe("2026-09-19");
+      }
+    }
+  });
+
+  it("carries the dossier's row-level confidence distribution", () => {
+    const counts: Record<string, number> = {};
+    for (const supplier of dataset.suppliers) {
+      counts[supplier.confidence] = (counts[supplier.confidence] ?? 0) + 1;
+    }
+    expect(counts).toEqual({ High: 20, "Medium-High": 4, Medium: 25, Low: 1 });
+  });
+
+  it("labels every price signal with an evidence tier (quote-only carries no figure)", () => {
+    let signalCount = 0;
+    for (const supplier of dataset.suppliers) {
+      expect(supplier.priceSignals.length, supplier.id).toBeGreaterThan(0);
+      for (const signal of supplier.priceSignals) {
+        expect(["supplier-published", "marketplace-listed", "quote-only"]).toContain(signal.tier);
+        if (signal.tier === "quote-only") {
+          expect(signal.value, `${supplier.id}: quote-only signal carries a figure`).toBeUndefined();
+        }
+        signalCount += 1;
+      }
+    }
+    expect(signalCount).toBeGreaterThan(0);
+  });
+
+  it("quarantines exactly the 1 directory-only and 9 marketplace-tier rows, each with a recorded reason", () => {
+    const quarantinedIds = dataset.suppliers.filter((s) => s.quarantined).map((s) => s.id);
+    expect(quarantinedIds).toEqual([
+      "china-011", // directory-only: official site unreachable on two fetch attempts
+      "china-015", // marketplace: Made-in-China showroom; own domain no longer serves the company
+      "china-036", // marketplace: Made-in-China audited-supplier listing
+      "china-037", // marketplace: Made-in-China audited-supplier listing
+      "china-038", // marketplace: Made-in-China audited-supplier listing
+      "china-039", // marketplace: Made-in-China audited-supplier listing
+      "china-040", // marketplace: Made-in-China audited-supplier listing
+      "china-042", // marketplace: Made-in-China audited-supplier listing
+      "china-045", // marketplace: Made-in-China audited-supplier listing
+      "china-049", // marketplace: GoldSupplier profile
+    ]);
+    for (const supplier of dataset.suppliers) {
+      if (!supplier.quarantined) continue;
+      expect(supplier.quarantined.reason.trim().length, `${supplier.id}: empty quarantine reason`).toBeGreaterThan(0);
+    }
   });
 });
