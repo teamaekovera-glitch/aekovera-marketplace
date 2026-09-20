@@ -9,7 +9,7 @@
  * objectID, so ordering is total and reproducible.
  */
 
-import type { CatalogDataset } from "../catalog/types";
+import type { CatalogDataset, RegionCount } from "../catalog/types";
 import type {
   CatalogFacetCounts,
   CatalogSearchFilters,
@@ -123,6 +123,12 @@ export interface CatalogIndex {
   postings: Map<string, { doc: number; weight: number }[]>;
   docFrequencies: Map<string, number>;
   totalDocs: number;
+  /**
+   * Dataset-level region counts from the merge module: quarantined rows are
+   * excluded from searchable records but still counted per region, so region
+   * facets report catalog truth rather than the searchable subset.
+   */
+  regionCounts?: readonly RegionCount[];
 }
 
 function indexField(
@@ -144,12 +150,16 @@ function indexField(
   }
 }
 
-export function buildCatalogIndex(records: readonly CatalogSupplierRecord[]): CatalogIndex {
+export function buildCatalogIndex(
+  records: readonly CatalogSupplierRecord[],
+  regionCounts?: readonly RegionCount[],
+): CatalogIndex {
   const index: CatalogIndex = {
     records: [...records],
     postings: new Map(),
     docFrequencies: new Map(),
     totalDocs: records.length,
+    regionCounts: regionCounts ? [...regionCounts] : undefined,
   };
   index.records.forEach((record, doc) => {
     indexField(index, doc, FIELD_WEIGHTS.name, record.name);
@@ -205,11 +215,22 @@ function toCounts(counts: Map<string, number>): FacetCount[] {
     );
 }
 
-/** Aggregate facet counts over the given records (sorted deterministically). */
+/**
+ * Aggregate facet counts over the given records (sorted deterministically).
+ * When dataset-level region counts are supplied, the region facet reports
+ * catalog truth — quarantined rows are not searchable but still count toward
+ * their region — while every other facet covers the given (matched) records.
+ */
 export function aggregateFacets(
   records: readonly CatalogSupplierRecord[],
+  datasetRegionCounts?: readonly RegionCount[],
 ): CatalogFacetCounts {
   const region = new Map<string, number>();
+  if (datasetRegionCounts) {
+    // Dataset-level truth: quarantined rows are not searchable but still
+    // count toward their region (merge-module contract).
+    for (const rc of datasetRegionCounts) region.set(rc.region, rc.supplierCount);
+  }
   const category = new Map<string, number>();
   const subtype = new Map<string, number>();
   const form = new Map<string, number>();
@@ -217,7 +238,7 @@ export function aggregateFacets(
   const moqBand = new Map<string, number>();
   const priceTiers = new Map<string, number>();
   for (const record of records) {
-    bump(region, record.region);
+    if (!datasetRegionCounts) bump(region, record.region);
     for (const value of record.categories) bump(category, value);
     for (const value of record.ingredients) bump(subtype, value);
     for (const value of record.forms) bump(form, value);
@@ -271,6 +292,7 @@ export function searchCatalogIndex(
 
   const facetCounts = aggregateFacets(
     matched.map((m) => index.records[m.doc] as CatalogSupplierRecord),
+    index.regionCounts,
   );
 
   const hits: CatalogSearchHit[] = matched

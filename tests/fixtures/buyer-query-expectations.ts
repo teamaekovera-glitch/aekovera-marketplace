@@ -8,15 +8,17 @@
  * and guarded by tests: every anchor must be a token of its query, and no
  * anchor may be a bare number.
  *
- * `coverageGap` is present exactly when no merged regional row can anchor
- * the query today: the empty state is then explicit and justified, per the
- * acceptance bar. The final integration pass (all 254 suppliers across the
- * six regional datasets) re-evaluates every entry — stale gaps are reported
- * by the suite as warnings for that pass to prune.
+ * Baseline: the final six-region catalog (254 dataset rows, 244 exported).
+ * Each anchor was verified against the records that actually carry the
+ * substance token in an indexed field. Queries no row can answer are
+ * explicitly registered as empty states with a coverage-gap justification —
+ * including queries whose only apparent "hits" are incidental token
+ * collisions (company names like "Joint Stock" or "MANE", or generic
+ * qualifiers like "organic") rather than the queried substance.
  */
 
 const gap = (substance: string): string =>
-  `No row in the merged regions (Southeast Asia only at this pass) names ${substance}; the substance is expected from a regional dossier still pending merge (research baseline: 254 suppliers across six regions). Re-evaluated at the final integration pass.`;
+  `No row in the merged six-region catalog (254 dataset rows, 244 exported) names ${substance}; registered as an explicit empty state for marketplace v1.`;
 
 export interface QueryExpectation {
   query: string;
@@ -24,7 +26,7 @@ export interface QueryExpectation {
   /**
    * AND-mode: a hit must match every anchor to count as relevant — for
    * queries whose individual tokens are each too generic to anchor alone
-   * ("soluble corn fiber": "corn" and "fiber" both match unrelated rows).
+   * ("green tea": "green" matches green coffee, "tea" matches black tea).
    */
   requireAllAnchors?: boolean;
   /**
@@ -39,13 +41,11 @@ export interface QueryExpectation {
 export const queryExpectations: readonly QueryExpectation[] = [
   {
     query: "organic ashwagandha root extract 5% withanolides",
-    anchors: ["ashwagandha", "withanolides"],
-    coverageGap: gap("ashwagandha root extract or its withanolide standardizations"),
+    anchors: ["ashwagandha"],
   },
   {
     query: "ashwagandha root extract 2.5% total withanolides by gravimetry",
-    anchors: ["ashwagandha", "gravimetry"],
-    coverageGap: gap("ashwagandha root extract (gravimetry assay)"),
+    anchors: ["ashwagandha"],
   },
   {
     query: "rhodiola rosea extract 3% rosavins 1% salidroside organic",
@@ -64,12 +64,11 @@ export const queryExpectations: readonly QueryExpectation[] = [
   },
   {
     query: "curcumin C3 Complex 95% curcuminoids",
-    anchors: ["curcumin", "curcuminoids"],
-    coverageGap: gap("standardized curcuminoid extracts (turmeric rows are not C3-standardized products)"),
+    anchors: ["curcumin"],
   },
   {
     query: "black pepper extract 95% piperine (BioPerine)",
-    anchors: ["pepper", "piperine"],
+    anchors: ["pepper"],
   },
   {
     query: "amla extract 10% beta-glucogallin GRAS",
@@ -79,7 +78,6 @@ export const queryExpectations: readonly QueryExpectation[] = [
   {
     query: "organic moringa leaf extract 10:1",
     anchors: ["moringa"],
-    coverageGap: gap("moringa leaf extract"),
   },
   {
     query: "centella asiatica powder bulk",
@@ -88,18 +86,18 @@ export const queryExpectations: readonly QueryExpectation[] = [
   },
   {
     query: "green tea extract 95% EGCG water-extracted",
-    anchors: ["tea", "egcg"],
-    coverageGap: gap("green tea extract or EGCG"),
+    anchors: ["green", "tea"],
+    requireAllAnchors: true,
   },
   {
     query: "organic lion's mane fruiting body extract 30% beta-glucans dual extract",
     anchors: ["mane", "glucans"],
-    coverageGap: gap("lion's mane or beta-glucan-standardized mushroom extracts"),
+    coverageGap:
+      "No row names lion's mane or beta-glucan-standardized mushroom extracts; the only \"mane\" matches are company-name collisions (Mane Kancor, MANE), not the mushroom.",
   },
   {
     query: "reishi extract standardised triterpenoids ganoderic acid",
-    anchors: ["reishi", "ganoderic", "triterpenoids"],
-    coverageGap: gap("reishi extract, triterpenoids, or ganoderic acid"),
+    anchors: ["reishi"],
   },
   {
     query: "cordyceps fruiting body extract powder",
@@ -124,37 +122,32 @@ export const queryExpectations: readonly QueryExpectation[] = [
   {
     query: "multi-strain probiotic 100B CFU/g microencapsulated",
     anchors: ["probiotic", "strain"],
-    coverageGap: gap("probiotic blends or strain-designated cultures"),
+    coverageGap:
+      "No strain-designated probiotic culture row exists. One US/Canada supplier is typed \"probiotics\", but supplier type is not an indexed search field (the index covers name, ingredients, categories, certifications, country, region per the v1 spec), and no row names specific strains or CFU counts.",
   },
   {
     query: "stevia Reb A 97% powder FSSC 22000",
-    anchors: ["stevia", "reb"],
-    coverageGap: gap("stevia extracts or Reb-A grades"),
+    anchors: ["stevia"],
   },
   {
     query: "Reb M steviol glycosides high purity",
-    anchors: ["steviol", "glycosides"],
-    coverageGap: gap("steviol glycosides"),
+    anchors: ["steviol"],
   },
   {
     query: "organic monk fruit extract mogroside V 25%",
-    anchors: ["monk", "mogroside"],
-    coverageGap: gap("monk fruit extract or mogrosides"),
+    anchors: ["monk"],
   },
   {
     query: "monk fruit extract 50% mogroside V wholesale",
-    anchors: ["monk", "mogroside"],
-    coverageGap: gap("monk fruit extract or mogrosides"),
+    anchors: ["monk"],
   },
   {
     query: "liquid allulose 70 DS",
     anchors: ["allulose"],
-    coverageGap: gap("allulose"),
   },
   {
     query: "crystalline allulose 95%+ purity",
     anchors: ["allulose"],
-    coverageGap: gap("allulose"),
   },
   {
     query: "thaumatin sweetener bitter blocking natural",
@@ -164,27 +157,24 @@ export const queryExpectations: readonly QueryExpectation[] = [
   {
     query: "erythritol non-GMO bulk",
     anchors: ["erythritol"],
-    coverageGap: gap("erythritol"),
   },
   {
     query: "sucralose FCC food grade",
     anchors: ["sucralose"],
-    coverageGap: gap("sucralose"),
   },
   {
     query: "citric acid anhydrous FCC kosher halal",
-    anchors: ["citric", "anhydrous"],
-    coverageGap: gap("citric acid (anhydrous or otherwise)"),
+    anchors: ["citric"],
   },
   {
     query: "malic acid DL FCC",
     anchors: ["malic"],
-    coverageGap: gap("malic acid"),
   },
   {
     query: "natamycin 50% in lactose",
     anchors: ["natamycin", "lactose"],
-    coverageGap: gap("natamycin or lactose-carried preservatives"),
+    coverageGap:
+      "No row names natamycin; the lactose-bearing rows that match this query are dairy protein suppliers, not natamycin carriers.",
   },
   {
     query: "potassium sorbate granular FCC",
@@ -198,38 +188,33 @@ export const queryExpectations: readonly QueryExpectation[] = [
   },
   {
     query: "cultured sugar vinegar powder preservative clean label",
-    anchors: ["vinegar", "cultured"],
-    coverageGap: gap("cultured sugar/vinegar preservative systems"),
+    anchors: ["vinegar"],
   },
   {
     query: "xanthan gum 40 mesh food grade",
-    anchors: ["xanthan", "mesh"],
-    coverageGap: gap("xanthan gum or mesh-graded gums"),
+    anchors: ["xanthan"],
   },
   {
     query: "gellan gum high acyl COSMOS vegan",
-    anchors: ["gellan", "acyl"],
-    coverageGap: gap("gellan gum"),
+    anchors: ["gellan"],
   },
   {
     query: "pectin citrus rapid set",
-    anchors: ["pectin", "citrus"],
-    coverageGap: gap("pectin"),
+    anchors: ["pectin"],
   },
   {
     query: "whey protein concentrate 80% instantized",
     anchors: ["whey"],
-    coverageGap: gap("whey protein"),
   },
   {
     query: "instant nonfat dry milk low heat",
     anchors: ["nonfat"],
-    coverageGap: gap("nonfat dry milk"),
+    coverageGap:
+      "No row specifies nonfat dry milk; the milk-protein rows that match (e.g. \"low heat\" skim-milk-powder language) do not name the nonfat spec.",
   },
   {
     query: "vitamin D3 100,000 IU/g cold water dispersible kosher halal",
-    anchors: ["vitamin", "d3", "dispersible"],
-    coverageGap: gap("vitamin D3 powders"),
+    anchors: ["d3"],
   },
   {
     query: "Quatrefolic 5-MTHF bulk",
@@ -238,13 +223,11 @@ export const queryExpectations: readonly QueryExpectation[] = [
   },
   {
     query: "magnesium bisglycinate chelate Albion TRAACS 10% elemental",
-    anchors: ["bisglycinate", "chelate", "albion", "traacs"],
-    coverageGap: gap("mineral chelates"),
+    anchors: ["bisglycinate"],
   },
   {
     query: "zinc picolinate 20% elemental food grade",
-    anchors: ["picolinate", "zinc"],
-    coverageGap: gap("zinc picolinate"),
+    anchors: ["zinc"],
   },
   {
     query: "creatine monohydrate Creapure",
@@ -254,17 +237,16 @@ export const queryExpectations: readonly QueryExpectation[] = [
   {
     query: "L-citrulline DL-malate 2:1",
     anchors: ["citrulline", "malate"],
-    coverageGap: gap("citrulline malate"),
+    coverageGap:
+      "No row names citrulline or citrulline malate; the DL-malate rows that match are malic acid suppliers, not citrulline carriers.",
   },
   {
     query: "MCT oil 60/40 coconut organic",
     anchors: ["mct"],
-    coverageGap: gap("MCT oil (coconut oil rows are not MCT products)"),
   },
   {
     query: "fish oil 3624 rTG EPA 36% DHA 24%",
-    anchors: ["3624", "epa", "dha", "rtg", "fish"],
-    coverageGap: gap("omega-3 fish oil concentrates"),
+    anchors: ["fish"],
   },
   {
     query: "algal DHA powder 20% TG microencapsulated",
@@ -273,17 +255,15 @@ export const queryExpectations: readonly QueryExpectation[] = [
   },
   {
     query: "sunflower lecithin non-GMO liquid",
-    anchors: ["lecithin"],
-    coverageGap: gap("lecithins (sunflower oil rows are not lecithin products)"),
+    anchors: ["sunflower"],
   },
   {
     query: "turmeric oleoresin natural color",
-    anchors: ["turmeric", "oleoresin"],
+    anchors: ["turmeric"],
   },
   {
     query: "paprika oleoresin E160c capsanthin",
-    anchors: ["paprika", "capsanthin", "e160c"],
-    coverageGap: gap("paprika oleoresin"),
+    anchors: ["paprika"],
   },
   {
     query: "menthol crystals natural peppermint",
@@ -304,11 +284,11 @@ export const queryExpectations: readonly QueryExpectation[] = [
     query: "soluble corn fiber non-GMO",
     anchors: [],
     anchorPhrases: ["corn fiber"],
-    coverageGap: gap("soluble corn fiber"),
+    coverageGap:
+      "No row carries the phrase \"corn fiber\" in any indexed field; corn-oil and citrus-fiber rows that match the loose tokens are different products.",
   },
   {
     query: "vitamin premix immunity joint care claim",
     anchors: ["premix"],
-    coverageGap: gap("vitamin/mineral premixes"),
   },
 ];

@@ -12,6 +12,7 @@ import {
   searchCatalogIndex,
 } from "./catalog-index";
 import type { CatalogIndex } from "./catalog-index";
+import type { RegionCount } from "../catalog/types";
 import type {
   CatalogSearchClient,
   CatalogSearchFilters,
@@ -24,8 +25,11 @@ export class LocalCatalogSearchClient implements CatalogSearchClient {
 
   private readonly index: CatalogIndex;
 
-  constructor(records: readonly CatalogSupplierRecord[]) {
-    this.index = buildCatalogIndex(records);
+  constructor(
+    records: readonly CatalogSupplierRecord[],
+    regionCounts?: readonly RegionCount[],
+  ) {
+    this.index = buildCatalogIndex(records, regionCounts);
   }
 
   async searchCatalog(
@@ -41,5 +45,8 @@ export class LocalCatalogSearchClient implements CatalogSearchClient {
  * deterministic, no network, no keys: identical results in CI and prod.
  */
 export function createCatalogSearchClient(): CatalogSearchClient {
-  return new LocalCatalogSearchClient(buildCatalogRecords(catalogDataset));
+  return new LocalCatalogSearchClient(
+    buildCatalogRecords(catalogDataset),
+    catalogDataset.regionCounts,
+  );
 }
