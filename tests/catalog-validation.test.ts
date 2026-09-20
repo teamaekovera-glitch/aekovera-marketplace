@@ -12,12 +12,14 @@ const eta = load("src/data/suppliers/europe-turkey-africa.json");
 const china = load("src/data/suppliers/china.json");
 const indiaSriLanka = load("src/data/suppliers/india-sri-lanka.json");
 const latam = load("src/data/suppliers/latin-america.json");
+const usCanada = load("src/data/suppliers/us-canada.json");
 const datasets: [string, CatalogFileInput][] = [
   ["southeast-asia", sea],
   ["europe-turkey-africa", eta],
   ["china", china],
   ["india-sri-lanka", indiaSriLanka],
   ["latin-america", latam],
+  ["us-canada", usCanada],
 ];
 const fixtures = [
   "tests/fixtures/catalog/missing-source/fixture-region.json",
@@ -77,17 +79,28 @@ describe("catalog validation", () => {
     ]);
   });
 
-  it("validates all regions together (204 source rows)", () => {
-    const result = validateCatalogFiles([sea, eta, china, indiaSriLanka, latam]);
+  it("passes the 50 US/Canada rows", () => {
+    const result = validateCatalogFiles([usCanada]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(204);
+    expect(result.supplierCount).toBe(50);
+    expect(result.perRegionCounts).toEqual([
+      { regionId: "us-canada", region: "US and Canada", supplierCount: 50 },
+    ]);
+  });
+
+  it("validates all regions together (254 source rows)", () => {
+    const result = validateCatalogFiles([sea, eta, china, indiaSriLanka, latam, usCanada]);
+    expect(result.issues).toEqual([]);
+    expect(result.valid).toBe(true);
+    expect(result.supplierCount).toBe(254);
     expect(result.perRegionCounts).toEqual([
       { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
       { regionId: "europe-turkey-africa", region: "Europe, Turkey and Africa", supplierCount: 42 },
       { regionId: "china", region: "China", supplierCount: 50 },
       { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
       { regionId: "latin-america", region: "Latin America", supplierCount: 39 },
+      { regionId: "us-canada", region: "US and Canada", supplierCount: 50 },
     ]);
   });
 
@@ -146,6 +159,56 @@ describe("catalog validation", () => {
       }
     }
   );
+
+  it("tiers US/Canada price signals as sourced — supplier-published or quote-only, never marketplace-listed", () => {
+    const dataset = usCanada.json as {
+      suppliers: {
+        id: string;
+        priceSignals: { tier: string; value?: string; note?: string; source: { url: string } }[];
+      }[];
+    };
+
+    // Dossier records no marketplace prices for US/Canada — every signal is row-attached.
+    for (const supplier of dataset.suppliers) {
+      for (const signal of supplier.priceSignals) {
+        expect(signal.tier, supplier.id).not.toBe("marketplace-listed");
+      }
+    }
+
+    // Dossier summary table marks exactly 10 rows Supplier-published (rows 1, 4, 6, 7,
+    // 8, 10, 31, 34, 36, 37) — BulkSupplements' pricing cell is "Retail e-commerce".
+    expect(
+      dataset.suppliers
+        .filter((s) => s.priceSignals.some((p) => p.tier === "supplier-published"))
+        .map((s) => s.id)
+    ).toEqual([
+      "us-canada-001",
+      "us-canada-004",
+      "us-canada-006",
+      "us-canada-007",
+      "us-canada-008",
+      "us-canada-010",
+      "us-canada-031",
+      "us-canada-034",
+      "us-canada-036",
+      "us-canada-037",
+    ]);
+
+    // Supplier-published figures stay supplier-published, cited to the supplier's own pages.
+    const royal = dataset.suppliers.find((s) => s.id === "us-canada-001");
+    expect(royal?.priceSignals[0]?.tier).toBe("supplier-published");
+    expect(royal?.priceSignals[0]?.value).toBeTruthy();
+    expect(royal?.priceSignals[0]?.source.url).toContain("royalcoffee.com");
+
+    // Quote-only rows carry a sourced signal, not an invented value.
+    for (const supplier of dataset.suppliers) {
+      for (const signal of supplier.priceSignals) {
+        if (signal.tier === "quote-only") {
+          expect(signal.value, supplier.id).toBeUndefined();
+        }
+      }
+    }
+  });
 
   it.each(fixtures.map((f) => [f.path, f]))(
     "rejects malformed fixture %s",
