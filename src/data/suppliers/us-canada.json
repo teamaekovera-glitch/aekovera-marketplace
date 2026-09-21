@@ -577,7 +577,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.rishi-tea.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": {
@@ -919,7 +920,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.woodlandfoods.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -1117,7 +1119,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.ingredion.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -1320,7 +1323,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.cargill.com/about",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -1334,7 +1338,8 @@
         ],
         "source": {
           "url": "https://www.cargill.com/about",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -2108,7 +2113,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.stratasfoods.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": {
@@ -2695,7 +2701,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.ddwcolor.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -2789,8 +2796,9 @@
       "country": {
         "value": "USA",
         "source": {
-          "url": "https://www.sensient.com/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.sensient.com/contact-us/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": null,
@@ -2850,6 +2858,10 @@
         {
           "url": "https://www.sensient.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.sensient.com/contact-us/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -3277,7 +3289,8 @@
         "value": "USA",
         "source": {
           "url": "https://balchem.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -3494,7 +3507,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.bulksupplements.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": null,
@@ -3757,7 +3771,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.mountainroseherbs.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -3852,28 +3867,25 @@
         "value": "Blue California",
         "source": {
           "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://www.bluecalifornia.com/",
         "source": {
           "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "USA (HQ city not stated on retrieved pages)",
-        "source": {
-          "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "USA",
         "source": {
           "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "regionsServed": null,
@@ -3884,7 +3896,8 @@
         ],
         "source": {
           "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -3898,16 +3911,11 @@
         ],
         "source": {
           "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "specialty ingredients developer/manufacturer",
-        "source": {
-          "url": "https://www.bluecalifornia.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
         "value": [],
         "source": {
@@ -3923,14 +3931,15 @@
           "source": {
             "url": "https://www.bluecalifornia.com/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
       "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "Medium",
-      "note": "portfolio claim: \"Kosher, non-GMO, GMO-free\" ingredients in portfolio (self-claim)",
+      "confidence": "Low",
+      "note": "portfolio claim: \"Kosher, non-GMO, GMO-free\" ingredients in portfolio (self-claim) | 2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification.",
       "sources": [
         {
           "url": "https://www.bluecalifornia.com/",
@@ -4060,7 +4069,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.compoundsolutions.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -4246,8 +4256,9 @@
       "hq": {
         "value": "River Falls, Wisconsin, USA; 660 S Mason Street, River Falls, WI 54022",
         "source": {
-          "url": "https://www.fiberstar.net/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.fiberstar.net/natural-citrus-fiber-about-us/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "country": {
@@ -4341,6 +4352,10 @@
         {
           "url": "https://www.fiberstar.net/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.fiberstar.net/natural-citrus-fiber-about-us/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -4372,7 +4387,8 @@
         "value": "Canada",
         "source": {
           "url": "https://www.lallemand.com/en",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page via secondary crawler."
         }
       },
       "regionsServed": null,
@@ -4465,7 +4481,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.enzymedevelopment.com/about",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -4648,7 +4665,8 @@
         "value": "USA",
         "source": {
           "url": "https://www.specialtyenzymes.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -4872,8 +4890,9 @@
       "country": {
         "value": "USA",
         "source": {
-          "url": "https://www.hawkinsinc.com/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.hawkinsinc.com/about-us/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": null,
@@ -4884,7 +4903,8 @@
         ],
         "source": {
           "url": "https://www.hawkinsinc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -4894,7 +4914,8 @@
         ],
         "source": {
           "url": "https://www.hawkinsinc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "type": {
@@ -4931,6 +4952,10 @@
         {
           "url": "https://www.hawkinsinc.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.hawkinsinc.com/about-us/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -5021,7 +5046,8 @@
         "value": "\"25 regional sales offices\"; \"3500+ ingredients\"",
         "source": {
           "url": "https://www.prinovaglobal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Claim confirmed on this page via secondary crawler during the 2026-09-21 URL audit."
         }
       },
       "reviewPresence": null,

@@ -370,8 +370,9 @@
       "regionsServed": {
         "value": "Supply network covering 35+ countries",
         "source": {
-          "url": "https://plantlipids.com/our-journey/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://plantlipids.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page via secondary crawler."
         }
       },
       "categories": {
@@ -444,6 +445,10 @@
         {
           "url": "https://plantlipids.com/our-journey/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://plantlipids.com/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -605,7 +610,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.akay-group.com/akay-natural-ingredients",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -822,7 +828,7 @@
         "source": {
           "url": "https://jayanti.com/",
           "retrievedAt": "2026-09-19",
-          "note": "Official site (T1)"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -1108,9 +1114,9 @@
       "country": {
         "value": "India",
         "source": {
-          "url": "https://www.jayantagro.com/",
-          "retrievedAt": "2026-09-19",
-          "note": "Official site (T1)"
+          "url": "https://www.jayantagro.com/company",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": null,
@@ -1173,6 +1179,10 @@
         {
           "url": "https://www.jayantagro.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.jayantagro.com/company",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -2265,7 +2275,7 @@
         "source": {
           "url": "https://etgindia.com/",
           "retrievedAt": "2026-09-19",
-          "note": "Official site (T1)"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "type": {
@@ -2817,7 +2827,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://nkgindiacoffee.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -2922,7 +2933,7 @@
         "source": {
           "url": "https://goodricke.com/",
           "retrievedAt": "2026-09-19",
-          "note": "Official site (T1)"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -3379,8 +3390,9 @@
             "name": "EU organic",
             "status": "company-stated",
             "source": {
-              "url": "https://japc.lk/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://japc.lk/certifications/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -3444,6 +3456,10 @@
         {
           "url": "https://organicceyloncinnamon.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://japc.lk/certifications/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -3763,7 +3779,7 @@
         "source": {
           "url": "https://www.dilmah.com/",
           "retrievedAt": "2026-09-19",
-          "note": "Official site (T1)"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {

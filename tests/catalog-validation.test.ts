@@ -266,12 +266,16 @@ describe("europe-turkey-africa dossier fidelity (art_KI4Y9iWa)", () => {
     });
   });
 
-  it("records every row source as read on the dossier retrieval date", () => {
+  it("records every row source as read on the dossier retrieval date or the 2026-09-21 audit re-read", () => {
+    // The 2026-09-21 URL-audit corrections re-read and, where a claim was
+    // re-sourced, re-fetched some supplier pages; those sources carry the audit
+    // date. Every date must still be an actual read date.
+    const KNOWN_READ_DATES = new Set(["2026-09-19", "2026-09-21"]);
     for (const supplier of dataset.suppliers) {
       expect(supplier.sources.length, supplier.id).toBeGreaterThan(0);
       for (const source of supplier.sources) {
         expect(source.url, supplier.id).toMatch(/^https:\/\//);
-        expect(source.retrievedAt, supplier.id).toBe("2026-09-19");
+        expect(KNOWN_READ_DATES.has(source.retrievedAt), supplier.id).toBe(true);
       }
     }
   });
@@ -338,12 +342,16 @@ describe("china dossier fidelity (art_VjN8Y0Ge)", () => {
     });
   });
 
-  it("records every row source as read on the dossier retrieval date", () => {
+  it("records every row source as read on the dossier retrieval date or the 2026-09-21 audit re-read", () => {
+    // The 2026-09-21 URL-audit corrections re-read and, where a claim was
+    // re-sourced, re-fetched some supplier pages; those sources carry the audit
+    // date. Every date must still be an actual read date.
+    const KNOWN_READ_DATES = new Set(["2026-09-19", "2026-09-21"]);
     for (const supplier of dataset.suppliers) {
       expect(supplier.sources.length, supplier.id).toBeGreaterThan(0);
       for (const source of supplier.sources) {
         expect(source.url, supplier.id).toMatch(/^https?:\/\//);
-        expect(source.retrievedAt, supplier.id).toBe("2026-09-19");
+        expect(KNOWN_READ_DATES.has(source.retrievedAt), supplier.id).toBe(true);
       }
     }
   });
@@ -353,7 +361,10 @@ describe("china dossier fidelity (art_VjN8Y0Ge)", () => {
     for (const supplier of dataset.suppliers) {
       counts[supplier.confidence] = (counts[supplier.confidence] ?? 0) + 1;
     }
-    expect(counts).toEqual({ High: 20, "Medium-High": 4, Medium: 25, Low: 1 });
+    // 2026-09-21 URL audit: china-022 (Ningxia Eppen) downgraded Medium → Low;
+    // its cited domain now redirects to a different company (Starlake
+    // Bioscience), so its identity claims are unverified.
+    expect(counts).toEqual({ High: 20, "Medium-High": 4, Medium: 24, Low: 2 });
   });
 
   it("labels every price signal with an evidence tier (quote-only carries no figure)", () => {

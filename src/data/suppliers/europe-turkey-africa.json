@@ -553,8 +553,9 @@
       "country": {
         "value": "France",
         "source": {
-          "url": "https://www.robertet.com/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.robertet.com/nous-contacter",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": null,
@@ -566,7 +567,8 @@
         ],
         "source": {
           "url": "https://www.robertet.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -578,7 +580,7 @@
         "source": {
           "url": "https://www.robertet.com/",
           "retrievedAt": "2026-09-19",
-          "note": "'Leader mondial des matières premières naturelles'; natural raw materials sourced in 60 countries; divisions: Parfumerie, Arômes, Matières premières, Health & Beauty"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "type": {
@@ -626,6 +628,10 @@
         {
           "url": "https://www.robertet.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.robertet.com/nous-contacter",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -669,7 +675,8 @@
         ],
         "source": {
           "url": "https://www.albertvieille.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; French-language homepage displays 100% pure and natural aromatic feedstocks (huiles essentielles), verified via secondary crawler."
         }
       },
       "ingredients": {
@@ -680,15 +687,16 @@
         ],
         "source": {
           "url": "https://www.albertvieille.com/",
-          "retrievedAt": "2026-09-19",
-          "note": "~150 pure & natural aromatic raw materials; example materials: Somali frankincense, Roman chamomile (Italy), Centifolia rose (France), cistus (Spain), jasmine sambac (India), tonka (Brazil), orange blossom (Tunisia)"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; homepage lists huiles essentielles, absolues et eaux florales, verified via secondary crawler."
         }
       },
       "type": {
         "value": "Naturals producer",
         "source": {
           "url": "https://www.albertvieille.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; homepage titles the company 'Producteur de matières premières aromatiques', verified via secondary crawler."
         }
       },
       "certifications": {
@@ -754,7 +762,7 @@
         "source": {
           "url": "https://www.mane.com/",
           "retrievedAt": "2026-09-19",
-          "note": "city not verified"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -1394,8 +1402,9 @@
       "regionsServed": {
         "value": "UK and export food industries",
         "source": {
-          "url": "https://ukblending.com/certified-organic-herbs-and-spice/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://ukblending.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "categories": {
@@ -1443,7 +1452,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://ukblending.com/certified-organic-herbs-and-spice/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -1451,7 +1461,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://ukblending.com/certified-organic-herbs-and-spice/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -1459,7 +1470,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://ukblending.com/certified-organic-herbs-and-spice/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -1495,6 +1507,10 @@
         {
           "url": "https://ukblending.com/certified-organic-herbs-and-spice/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://ukblending.com/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -2489,7 +2505,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://kingapricot.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -2702,7 +2719,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.yabanfood.com/raisins",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -3505,7 +3523,8 @@
         "value": "Ethiopia",
         "source": {
           "url": "https://www.oromiacoffeeunion.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -3526,7 +3545,8 @@
         ],
         "source": {
           "url": "https://www.oromiacoffeeunion.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "type": {
@@ -3551,7 +3571,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.oromiacoffeeunion.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -3567,7 +3588,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.oromiacoffeeunion.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -4429,7 +4451,8 @@
         ],
         "source": {
           "url": "https://rosedadesmgoun.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
