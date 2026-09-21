@@ -37,17 +37,21 @@ describe("landing page", () => {
   it("renders catalog counts computed from the dataset, not hardcoded", () => {
     render(<LandingPage />);
     const stats = taxonomyStats();
-    expect(statValue("Suppliers listed")).toBe(String(catalogSuppliers.length));
+    // Spec route row: live counts "254 suppliers · 33 categories · 6 regions" —
+    // the headline is the full research corpus, not the exported subset.
+    expect(statValue("Suppliers researched")).toBe(String(rawRows.length));
     expect(statValue("Regions")).toBe(String(regionCounts.length));
     expect(statValue("Ingredient categories")).toBe(String(stats.categoryCount));
     expect(statValue("Taxonomy subtypes tracked")).toBe(String(stats.subtypeCount));
   });
 
-  it("discloses the withheld-row count in the stats footnote", () => {
+  it("discloses the listed/withheld split in the stats footnote", () => {
     render(<LandingPage />);
     const withheld = quarantinedCount(rawRows);
     expect(withheld).toBe(10);
-    expect(screen.getByTestId("withheld-note").textContent).toContain(String(withheld));
+    const note = screen.getByTestId("withheld-note").textContent ?? "";
+    expect(note).toContain(String(catalogSuppliers.length));
+    expect(note).toContain(String(withheld));
   });
 
   it("offers six region entry points and all category entry links", () => {
