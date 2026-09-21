@@ -2,6 +2,7 @@
 import { cleanup, fireEvent, render, screen, waitFor } from "@testing-library/react";
 import { afterEach, describe, expect, it } from "vitest";
 import { SupplierDiscovery } from "@/components/discovery/supplier-discovery";
+import SuppliersPage from "@/app/suppliers/page";
 import {
   buildDiscoveryRecords,
   DiscoverySearchClient,
@@ -218,5 +219,101 @@ describe("SupplierDiscovery — compare tray", () => {
     await waitFor(() => {
       expect(container.querySelector('[data-slot="compare-dock"]')).toBeNull();
     });
+  });
+});
+
+describe("SupplierDiscovery — URL param seeding (landing deep-links)", () => {
+  it("seeds the keyword from initialQuery so ?q= deep-links filter results", async () => {
+    const expected = await expectedClient().searchCatalog("vanilla", {});
+    expect(expected.totalHits).toBeGreaterThan(0);
+    expect(expected.totalHits).toBeLessThan(catalogSuppliers.length);
+
+    const client = new DiscoverySearchClient(
+      buildDiscoveryRecords(catalogSuppliers, regionCounts),
+      regionCounts,
+    );
+    const initialResponse = await client.searchCatalog("vanilla", {});
+    const { container } = render(
+      <SupplierDiscovery
+        suppliers={catalogSuppliers}
+        regionCounts={regionCounts}
+        initialResponse={initialResponse}
+        initialQuery="vanilla"
+      />
+    );
+
+    // The controlled search bar reflects the seeded query…
+    expect(searchInput(container).value).toBe("vanilla");
+    // …and the first paint shows the filtered set, not browse mode.
+    expect(container.querySelector("[data-result-count]")?.textContent).toContain(
+      `${expected.totalHits} suppliers`
+    );
+  });
+
+  it("preselects the region facet from initialRegions so ?region= deep-links filter", async () => {
+    const client = new DiscoverySearchClient(
+      buildDiscoveryRecords(catalogSuppliers, regionCounts),
+      regionCounts,
+    );
+    const initialResponse = await client.searchCatalog("", {
+      regions: ["Southeast Asia"],
+    });
+    expect(initialResponse.totalHits).toBe(41); // dataset-level SEA count
+
+    const { container } = render(
+      <SupplierDiscovery
+        suppliers={catalogSuppliers}
+        regionCounts={regionCounts}
+        initialResponse={initialResponse}
+        initialRegions={["Southeast Asia"]}
+      />
+    );
+
+    expect(facetCheckbox(container, "Southeast Asia").checked).toBe(true);
+    expect(container.querySelector("[data-result-count]")?.textContent).toContain(
+      `${initialResponse.totalHits} suppliers`
+    );
+  });
+});
+
+describe("SuppliersPage — URL param wiring (the landing's GET deep-links)", () => {
+  it("reads q and region params and seeds the discovery surface", async () => {
+    const expected = await expectedClient().searchCatalog("vanilla", {
+      regions: ["Southeast Asia"],
+    });
+
+    const ui = await SuppliersPage({
+      searchParams: Promise.resolve({ q: "vanilla", region: "southeast-asia" }),
+    });
+    const { container } = render(ui);
+
+    expect(searchInput(container).value).toBe("vanilla");
+    expect(facetCheckbox(container, "Southeast Asia").checked).toBe(true);
+    expect(container.querySelector("[data-result-count]")?.textContent).toContain(
+      `${expected.totalHits} suppliers`
+    );
+  });
+
+  it("degrades an unknown regionId to browse mode instead of a broken facet", async () => {
+    const ui = await SuppliersPage({
+      searchParams: Promise.resolve({ region: "atlantis" }),
+    });
+    const { container } = render(ui);
+
+    expect(searchInput(container).value).toBe("");
+    expect(container.querySelector("[data-result-count]")?.textContent).toContain(
+      `${catalogSuppliers.length} suppliers`
+    );
+    expect(facetCheckbox(container, "Southeast Asia").checked).toBe(false);
+  });
+
+  it("renders browse mode when no params are present", async () => {
+    const ui = await SuppliersPage({ searchParams: Promise.resolve({}) });
+    const { container } = render(ui);
+
+    expect(searchInput(container).value).toBe("");
+    expect(container.querySelector("[data-result-count]")?.textContent).toContain(
+      `${catalogSuppliers.length} suppliers`
+    );
   });
 });
