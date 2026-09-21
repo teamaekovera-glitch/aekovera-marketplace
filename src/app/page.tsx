@@ -1,160 +1,167 @@
 import Link from "next/link";
-import { Badge } from "@/components/ui/badge";
-import { Button, buttonVariants } from "@/components/ui/button";
-import { PLAN_FEATURES } from "@/lib/plans";
-import type { PlanId } from "@/lib/types";
+import type { Metadata } from "next";
+
+import { SearchEntryForm } from "@/components/browse/search-entry-form";
+import { StatStrip } from "@/components/catalog/stat-strip";
+import { buttonVariants } from "@/components/ui/button";
+import { quarantinedCount } from "@/lib/catalog/display";
+import { catalogSuppliers, catalogDataset, regionCounts, regionalDatasets } from "@/lib/catalog/merge";
+import { categoryEntries, regionEntries, taxonomyStats } from "@/lib/taxonomy";
 
 /**
- * Landing page (F-01). Public marketing page; role areas live under
- * /brand, /buyer, /admin behind the middleware and the shared layout shell.
+ * Landing page for Ingredient Marketplace v1 (spec F-01): search-first entry,
+ * live counts computed from the merged catalog at build time — never
+ * hardcoded — and region/category entry points. Quarantined rows are never
+ * counted among listed suppliers; their withholding is disclosed explicitly.
  */
 
-const VALUE_PROPS = [
-  {
-    title: "Retailer-ready brand profiles",
-    body: "Structured catalogs, certifications, distribution regions, and MOQs — everything a buyer needs to evaluate a line, in one profile.",
-  },
-  {
-    title: "Sourcing opportunities",
-    body: "Buyers post exactly what they're sourcing. Brands see the brief, pitch the right SKUs, and track their submission end-to-end.",
-  },
-  {
-    title: "AI-assisted matching",
-    body: "Deterministic scoring plus AI summaries surface the strongest brand-buyer pairs — no more directory dead-ends.",
-  },
-  {
-    title: "Verified trust signals",
-    body: "Buyer verification, certification records, and full analytics give both sides the confidence to move fast.",
-  },
-] as const;
-
-const PLAN_ORDER: PlanId[] = ["free", "starter", "pro", "enterprise"];
-
-function formatPrice(cents: number | null): string {
-  if (cents === null) return "$0";
-  return `$${(cents / 100).toFixed(0)}`;
-}
+export const metadata: Metadata = {
+  title: "Ingredient suppliers, in one place",
+  description:
+    "A provenance-first catalog of ingredient suppliers across six regions. Every claim links to the page it was read from, with the date we read it and a confidence rating.",
+};
 
 export default function LandingPage() {
+  const allRows = regionalDatasets.flatMap((dataset) => dataset.suppliers);
+  const withheldRows = quarantinedCount(allRows);
+  const stats = taxonomyStats();
+  const regions = regionEntries(catalogSuppliers, regionCounts);
+  const categories = categoryEntries(catalogSuppliers);
+
   return (
     <div className="flex min-h-screen flex-col">
-      <header className="sticky top-0 z-40 border-b bg-background/95 backdrop-blur">
+      <header className="border-b bg-background">
         <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-4 sm:px-6">
           <Link href="/" className="text-lg font-bold tracking-tight">
             Aekovera
+            <span className="ml-2 text-sm font-normal text-muted-foreground">
+              Ingredient Marketplace
+            </span>
           </Link>
-          <nav aria-label="Primary" className="flex items-center gap-3">
-            <Link href="/signin" className={buttonVariants({ variant: "ghost", size: "sm" })}>
-              Sign in
+          <nav aria-label="Primary" className="flex items-center gap-4 text-sm">
+            <Link href="/suppliers" className="text-muted-foreground hover:text-foreground">
+              Suppliers
             </Link>
-            <Button variant="accent" size="sm">
-              <Link href="/signup" className="text-sm">Get started</Link>
-            </Button>
+            <Link href="/provenance" className="text-muted-foreground hover:text-foreground">
+              Provenance
+            </Link>
           </nav>
         </div>
       </header>
 
       <main className="flex-1">
-        {/* Hero */}
+        {/* Search-first hero */}
         <section className="border-b bg-gradient-to-b from-secondary/60 to-background">
-          <div className="mx-auto max-w-6xl px-4 py-20 sm:px-6 sm:py-28">
+          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-20">
             <div className="max-w-3xl">
-              <Badge variant="accent" className="mb-4">
-                B2B marketplace for CPG
-              </Badge>
               <h1 className="text-4xl font-bold tracking-tight sm:text-5xl">
-                Where CPG brands meet retail buyers
+                Ingredient suppliers, in one place
               </h1>
-              <p className="mt-5 text-lg text-muted-foreground">
-                Aekovera replaces the trade-show scramble with a living marketplace:
-                verified buyers discover brands through structured profiles and
-                AI-assisted matching, and brands get discovered by the right
-                shelves.
+              <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
+                A provenance-first catalog of {catalogDataset.totalCount} suppliers across{" "}
+                {regionCounts.length} regions. Every claim links to the page it was read
+                from, with the date we read it and a confidence rating — nothing is
+                presented as verified until a registry says so.
               </p>
-              <div className="mt-8 flex flex-wrap gap-3">
-                <Button variant="accent" size="lg">
-                  <Link href="/signup?role=brand" className="text-sm font-medium">
-                    List your brand
-                  </Link>
-                </Button>
-                <Button variant="outline" size="lg">
-                  <Link href="/signup?role=buyer" className="text-sm font-medium">
-                    Source as a buyer
-                  </Link>
-                </Button>
+              <div className="mt-8">
+                <SearchEntryForm />
               </div>
-              <p className="mt-4 text-sm text-muted-foreground">
-                Demo accounts are seeded in mock mode — sign in as a brand,
-                buyer, or admin to explore.
+            </div>
+          </div>
+        </section>
+
+        {/* Live catalog stats — computed from the dataset at build time */}
+        <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <StatStrip
+            stats={[
+              { value: catalogDataset.totalCount, label: "Suppliers listed" },
+              { value: regionCounts.length, label: "Regions" },
+              { value: stats.categoryCount, label: "Ingredient categories" },
+              { value: stats.subtypeCount, label: "Taxonomy subtypes tracked" },
+            ]}
+          />
+          <p data-testid="withheld-note" className="mt-3 text-xs text-muted-foreground">
+            Counts are computed from the published catalog at build time.
+            {withheldRows > 0
+              ? ` ${withheldRows} supplier rows are withheld pending verification and are not listed or searchable.`
+              : ""}
+          </p>
+        </section>
+
+        {/* Region entry points */}
+        <section className="border-t bg-secondary/40">
+          <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+            <h2 className="text-2xl font-semibold tracking-tight">Browse by region</h2>
+            <p className="mt-2 text-muted-foreground">
+              Research dossiers were built region by region; each link opens the
+              discovery surface filtered to that region.
+            </p>
+            <ul className="mt-8 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+              {regions.map((region) => (
+                <li key={region.regionId}>
+                  <Link
+                    href={`/suppliers?region=${region.regionId}`}
+                    data-slot="region-entry"
+                    className="flex h-full flex-col justify-between rounded-lg border bg-card p-5 shadow-sm transition-colors hover:bg-secondary/60"
+                  >
+                    <span className="font-semibold">{region.region}</span>
+                    <span className="mt-2 text-sm text-muted-foreground">
+                      {region.supplierCount} suppliers listed
+                      {region.withheldCount > 0
+                        ? ` · ${region.withheldCount} withheld pending verification`
+                        : ""}
+                    </span>
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        {/* Category entry points */}
+        <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
+          <h2 className="text-2xl font-semibold tracking-tight">
+            Browse by ingredient category
+          </h2>
+          <p className="mt-2 text-muted-foreground">
+            {stats.categoryCount} categories from our ingredient taxonomy, each with
+            live supplier counts. Subtypes appear as filters only once a supplier
+            page has verified them.
+          </p>
+          <ul className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
+            {categories.map((category) => (
+              <li key={category.slug}>
+                <Link
+                  href={`/categories/${category.slug}`}
+                  data-slot="category-entry"
+                  className="flex items-baseline justify-between gap-2 rounded-lg border bg-card px-4 py-3 text-sm shadow-sm transition-colors hover:bg-secondary/60"
+                >
+                  <span className="font-medium">{category.name}</span>
+                  <span className="tabular-nums text-muted-foreground">
+                    {category.supplierCount}
+                  </span>
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </section>
+
+        {/* Provenance strip */}
+        <section className="border-t bg-secondary/40">
+          <div className="mx-auto flex max-w-6xl flex-col gap-4 px-4 py-12 sm:flex-row sm:items-center sm:justify-between sm:px-6">
+            <div className="max-w-2xl">
+              <h2 className="text-xl font-semibold tracking-tight">
+                Every fact carries its evidence
+              </h2>
+              <p className="mt-2 text-sm text-muted-foreground">
+                Claims are recorded with the exact URL they were read from and the
+                date we read it. Certifications are shown as company-stated until a
+                registry verifies them. Unknown fields say so, in plain language.
               </p>
             </div>
-          </div>
-        </section>
-
-        {/* Value props */}
-        <section className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-          <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-            Built for how CPG buying actually works
-          </h2>
-          <div className="mt-10 grid gap-6 sm:grid-cols-2">
-            {VALUE_PROPS.map((prop) => (
-              <article
-                key={prop.title}
-                className="rounded-lg border bg-card p-6 shadow-sm"
-              >
-                <h3 className="text-lg font-semibold">{prop.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">
-                  {prop.body}
-                </p>
-              </article>
-            ))}
-          </div>
-        </section>
-
-        {/* Plans */}
-        <section className="border-t bg-secondary/40">
-          <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6">
-            <h2 className="text-2xl font-semibold tracking-tight sm:text-3xl">
-              Simple annual pricing
-            </h2>
-            <p className="mt-2 text-muted-foreground">
-              Start free. Upgrade when your catalog is ready for prime time.
-            </p>
-            <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-              {PLAN_ORDER.map((planId) => {
-                const plan = PLAN_FEATURES[planId];
-                return (
-                  <article
-                    key={plan.id}
-                    className="flex flex-col rounded-lg border bg-card p-6 shadow-sm"
-                  >
-                    <h3 className="font-semibold">{plan.label}</h3>
-                    <p className="mt-2 text-3xl font-bold">
-                      {formatPrice(plan.yearlyPriceCents)}
-                      <span className="text-sm font-normal text-muted-foreground">
-                        {plan.yearlyPriceCents === null ? "" : "/yr"}
-                      </span>
-                    </p>
-                    <ul className="mt-4 space-y-2 text-sm text-muted-foreground">
-                      <li>
-                        {plan.maxProducts === null
-                          ? "Unlimited products"
-                          : `${plan.maxProducts} products`}
-                      </li>
-                      <li>
-                        {plan.submissionQuota.monthlyLimit === null
-                          ? "Unlimited submissions"
-                          : `${plan.submissionQuota.monthlyLimit} submissions/mo`}
-                      </li>
-                      <li>{plan.messaging ? "Messaging included" : "No messaging"}</li>
-                      <li className="capitalize">
-                        {plan.searchVisibility} search visibility
-                      </li>
-                    </ul>
-                  </article>
-                );
-              })}
-            </div>
+            <Link href="/provenance" className={buttonVariants({ variant: "outline" })}>
+              Read the methodology
+            </Link>
           </div>
         </section>
       </main>
@@ -162,9 +169,7 @@ export default function LandingPage() {
       <footer className="border-t py-8">
         <div className="mx-auto flex max-w-6xl flex-col gap-2 px-4 text-sm text-muted-foreground sm:flex-row sm:items-center sm:justify-between sm:px-6">
           <p>© 2026 Aekovera. All rights reserved.</p>
-          <p>
-            Phase 0 foundation · mock-first build (no external keys required)
-          </p>
+          <p>Provenance-first ingredient sourcing · v1</p>
         </div>
       </footer>
     </div>
