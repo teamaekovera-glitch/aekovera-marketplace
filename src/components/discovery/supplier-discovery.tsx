@@ -25,14 +25,23 @@ export function SupplierDiscovery({
   suppliers,
   regionCounts,
   initialResponse,
+  initialQuery = "",
+  initialRegions,
 }: {
   suppliers: readonly Supplier[];
   regionCounts: readonly RegionCount[];
   /** The browse-mode response the server page already computed — no client flash. */
   initialResponse: CatalogSearchResponse;
+  /** Keyword seeded from the URL's ?q= deep-link (landing search entry). */
+  initialQuery?: string;
+  /** Region facet values preselected from the URL's ?region= deep-link. */
+  initialRegions?: readonly string[];
 }) {
-  const [query, setQuery] = useState("");
-  const [selected, setSelected] = useState<Record<string, Set<string>>>({});
+  const [query, setQuery] = useState(initialQuery);
+  const [selected, setSelected] = useState<Record<string, Set<string>>>(
+    (): Record<string, Set<string>> =>
+      initialRegions?.length ? { regions: new Set(initialRegions) } : {},
+  );
   const [response, setResponse] = useState(initialResponse);
   const [compareIds, setCompareIds] = useState<string[]>([]);
 

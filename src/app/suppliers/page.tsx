@@ -21,18 +21,36 @@ export const metadata: Metadata = {
     "Search ingredient suppliers by keyword and taxonomy facets. Every claim links to the page it was read from; anything unsourced is labeled Unknown.",
 };
 
-export default async function SuppliersPage() {
+export default async function SuppliersPage({
+  searchParams,
+}: {
+  searchParams: Promise<Record<string, string | string[] | undefined>>;
+}) {
+  const params = await searchParams;
+  const query = typeof params.q === "string" ? params.q : "";
+  // Region deep-links (landing entry points) carry the regionId; the region
+  // facet filters on the region name, so map through regionCounts. An unknown
+  // regionId degrades to browse mode instead of a broken facet.
+  const regionId = typeof params.region === "string" ? params.region : "";
+  const regionMatch = regionCounts.find((region) => region.regionId === regionId);
+  const initialRegions = regionMatch ? [regionMatch.region] : undefined;
+
   const client = new DiscoverySearchClient(
     buildDiscoveryRecords(catalogSuppliers, regionCounts),
     regionCounts,
   );
-  const initialResponse = await client.searchCatalog("", {});
+  const initialResponse = await client.searchCatalog(
+    query,
+    initialRegions ? { regions: initialRegions } : {},
+  );
 
   return (
     <SupplierDiscovery
       suppliers={catalogSuppliers}
       regionCounts={regionCounts}
       initialResponse={initialResponse}
+      initialQuery={query}
+      initialRegions={initialRegions}
     />
   );
 }
