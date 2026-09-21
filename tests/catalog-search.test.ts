@@ -11,7 +11,7 @@
  *
  * Only merged regions exist in the dataset when this suite runs (Southeast
  * Asia at this pass). The final integration pass re-runs the suite against
- * all 254 rows; entries whose registered gap goes stale are surfaced as
+ * all 268 rows; entries whose registered gap goes stale are surfaced as
  * warnings for that pass to prune — the hard assertions (anchored ⇔
  * registered, or anchored for gapless queries) never weaken.
  */
@@ -50,8 +50,8 @@ describe("catalog index build", () => {
   it("maps dataset rows into flat records with display values", () => {
     const records = buildCatalogRecords(catalogDataset);
     expect(records).toHaveLength(catalogDataset.totalCount);
-    // Final catalog: 254 dataset rows minus 10 quarantined China rows.
-    expect(catalogDataset.totalCount).toBe(244);
+    // Final catalog: 268 dataset rows minus 10 quarantined China rows.
+    expect(catalogDataset.totalCount).toBe(258);
     const regionNames = new Set(catalogDataset.regionCounts.map((r) => r.region));
     expect(new Set(records.map((r) => r.region))).toEqual(regionNames);
     for (const record of records) {
@@ -99,48 +99,49 @@ describe("facet aggregation", () => {
   it("counts every facet over the whole catalog", () => {
     const records = buildCatalogRecords(catalogDataset);
     const facets = aggregateFacets(records);
-    // Record-derived region counts cover the 244 exported rows; China shows
+    // Record-derived region counts cover the 258 exported rows; China shows
     // 40 exported of its 50 dataset rows (10 quarantined).
     expect(facets.region).toEqual([
-      { value: "US and Canada", count: 50 },
+      { value: "US and Canada", count: 59 },
+      { value: "Southeast Asia", count: 44 },
       { value: "Europe, Turkey and Africa", count: 42 },
-      { value: "Southeast Asia", count: 41 },
       { value: "China", count: 40 },
       { value: "Latin America", count: 39 },
-      { value: "India & Sri Lanka", count: 32 },
+      { value: "India & Sri Lanka", count: 34 },
     ]);
     // Dataset-level override (what the search client exposes): quarantined
     // rows are not searchable but still count toward their region.
     const datasetFacets = aggregateFacets(records, catalogDataset.regionCounts);
     expect(datasetFacets.region).toEqual([
+      { value: "US and Canada", count: 59 },
       { value: "China", count: 50 },
-      { value: "US and Canada", count: 50 },
+      { value: "Southeast Asia", count: 44 },
       { value: "Europe, Turkey and Africa", count: 42 },
-      { value: "Southeast Asia", count: 41 },
       { value: "Latin America", count: 39 },
-      { value: "India & Sri Lanka", count: 32 },
+      { value: "India & Sri Lanka", count: 34 },
     ]);
-    // Final dataset: 254 rows across six regions, 244 exported.
+    // Final dataset: 268 rows across six regions, 258 exported.
     expect(catalogDataset.regionCounts.map((r) => r.supplierCount)).toEqual([
-      41, 42, 50, 32, 39, 50,
+      44, 42, 50, 34, 39, 59,
     ]);
-    expect(catalogDataset.regionCounts.reduce((sum, r) => sum + r.supplierCount, 0)).toBe(254);
+    expect(catalogDataset.regionCounts.reduce((sum, r) => sum + r.supplierCount, 0)).toBe(268);
     // Price tiers over the final catalog: quote-only dominates, and
     // supplier-published tiers exist where sourced.
     expect(facets.priceTiers).toEqual([
-      { value: "quote-only", count: 225 },
-      { value: "supplier-published", count: 19 },
+      { value: "quote-only", count: 224 },
+      { value: "supplier-published", count: 34 },
     ]);
     const moqRows = catalogDataset.suppliers.filter((s) => s.moq !== null).length;
-    // Final catalog: 24 rows state an MOQ; 13 of them are prose statements
-    // ("flexible MOQs", "low MOQs", retail-only) that honestly band as
-    // "unspecified" — banding them would fabricate a quantity (provenance
-    // rulebook). 11 rows state a parseable quantity.
-    expect(moqRows).toBe(24);
+    // Final catalog: 28 rows state an MOQ; 15 of them are prose statements
+    // ("flexible MOQs", "low MOQs", retail-only) or bare "ton"/"pallet"
+    // quantities that honestly band as "unspecified" — banding them would
+    // fabricate a quantity (provenance rulebook). 13 rows state a parseable
+    // quantity.
+    expect(moqRows).toBe(28);
     const banded = facets.moqBand
       .filter((b) => b.value !== "unspecified")
       .reduce((sum, b) => sum + b.count, 0);
-    expect(banded).toBe(11);
+    expect(banded).toBe(13);
   });
 
   it("sorts facet values by count desc then value asc", () => {
@@ -190,7 +191,7 @@ describe("search behavior", () => {
   it("treats an empty query as browse mode over all records, ordered by build order", () => {
     const client = createCatalogSearchClient();
     return client.searchCatalog("").then((res) => {
-      expect(res.totalHits).toBe(244);
+      expect(res.totalHits).toBe(258);
       const ids = res.hits.map((h) => h.record.objectID);
       // Browse returns every exported record in deterministic build order
       // (regional dataset release order), not lexicographic id order.
@@ -199,12 +200,12 @@ describe("search behavior", () => {
       // searchable but still count toward their region (China 50, of which
       // 10 are quarantined).
       expect(res.facetCounts.region).toEqual([
+        { value: "US and Canada", count: 59 },
         { value: "China", count: 50 },
-        { value: "US and Canada", count: 50 },
+        { value: "Southeast Asia", count: 44 },
         { value: "Europe, Turkey and Africa", count: 42 },
-        { value: "Southeast Asia", count: 41 },
         { value: "Latin America", count: 39 },
-        { value: "India & Sri Lanka", count: 32 },
+        { value: "India & Sri Lanka", count: 34 },
       ]);
     });
   });

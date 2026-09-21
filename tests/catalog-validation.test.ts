@@ -29,13 +29,13 @@ const fixtures = [
 ].map(load);
 
 describe("catalog validation", () => {
-  it("passes the 41 remapped SEA rows", () => {
+  it("passes the 44 remapped SEA rows", () => {
     const result = validateCatalogFiles([sea]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(41);
+    expect(result.supplierCount).toBe(44);
     expect(result.perRegionCounts).toEqual([
-      { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
+      { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 44 },
     ]);
   });
 
@@ -59,13 +59,13 @@ describe("catalog validation", () => {
     ]);
   });
 
-  it("passes the 32 normalized India/Sri Lanka rows", () => {
+  it("passes the 34 normalized India/Sri Lanka rows", () => {
     const result = validateCatalogFiles([indiaSriLanka]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(32);
+    expect(result.supplierCount).toBe(34);
     expect(result.perRegionCounts).toEqual([
-      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
+      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 34 },
     ]);
   });
 
@@ -79,28 +79,28 @@ describe("catalog validation", () => {
     ]);
   });
 
-  it("passes the 50 US/Canada rows", () => {
+  it("passes the 59 US/Canada rows", () => {
     const result = validateCatalogFiles([usCanada]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(50);
+    expect(result.supplierCount).toBe(59);
     expect(result.perRegionCounts).toEqual([
-      { regionId: "us-canada", region: "US and Canada", supplierCount: 50 },
+      { regionId: "us-canada", region: "US and Canada", supplierCount: 59 },
     ]);
   });
 
-  it("validates all regions together (254 source rows)", () => {
+  it("validates all regions together (268 source rows)", () => {
     const result = validateCatalogFiles([sea, eta, china, indiaSriLanka, latam, usCanada]);
     expect(result.issues).toEqual([]);
     expect(result.valid).toBe(true);
-    expect(result.supplierCount).toBe(254);
+    expect(result.supplierCount).toBe(268);
     expect(result.perRegionCounts).toEqual([
-      { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
+      { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 44 },
       { regionId: "europe-turkey-africa", region: "Europe, Turkey and Africa", supplierCount: 42 },
       { regionId: "china", region: "China", supplierCount: 50 },
-      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
+      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 34 },
       { regionId: "latin-america", region: "Latin America", supplierCount: 39 },
-      { regionId: "us-canada", region: "US and Canada", supplierCount: 50 },
+      { regionId: "us-canada", region: "US and Canada", supplierCount: 59 },
     ]);
   });
 
@@ -175,8 +175,10 @@ describe("catalog validation", () => {
       }
     }
 
-    // Dossier summary table marks exactly 10 rows Supplier-published (rows 1, 4, 6, 7,
-    // 8, 10, 31, 34, 36, 37) — BulkSupplements' pricing cell is "Retail e-commerce".
+    // Dossier summary originally marked 10 rows Supplier-published (rows 1, 4, 6, 7,
+    // 8, 10, 31, 34, 36, 37). The 2026-09-21 import re-captured BulkSupplements'
+    // retail SKUs (035, now supplier-published) and added the 9 e-commerce sellers
+    // (051-059), all with supplier-published signals.
     expect(
       dataset.suppliers
         .filter((s) => s.priceSignals.some((p) => p.tier === "supplier-published"))
@@ -190,8 +192,18 @@ describe("catalog validation", () => {
       "us-canada-010",
       "us-canada-031",
       "us-canada-034",
+      "us-canada-035",
       "us-canada-036",
       "us-canada-037",
+      "us-canada-051",
+      "us-canada-052",
+      "us-canada-053",
+      "us-canada-054",
+      "us-canada-055",
+      "us-canada-056",
+      "us-canada-057",
+      "us-canada-058",
+      "us-canada-059",
     ]);
 
     // Supplier-published figures stay supplier-published, cited to the supplier's own pages.
@@ -423,8 +435,8 @@ describe("india-sri-lanka dossier fidelity (art_GfNGlM9s)", () => {
     expect(dataset.documentArtifact).toBe("art_GfNGlM9s");
   });
 
-  it("carries all 32 rows with sequential dossier ordinals", () => {
-    expect(dataset.suppliers).toHaveLength(32);
+  it("carries all 34 rows with sequential dossier ordinals", () => {
+    expect(dataset.suppliers).toHaveLength(34);
     dataset.suppliers.forEach((supplier, i) => {
       expect(supplier.id).toBe(`india-sri-lanka-${String(i + 1).padStart(3, "0")}`);
     });

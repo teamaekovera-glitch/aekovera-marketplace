@@ -9,16 +9,16 @@ import {
 describe("catalog merge", () => {
   it("emits correct per-region counts (dataset-level)", () => {
     expect(regionCounts).toEqual([
-      { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 41 },
+      { regionId: "southeast-asia", region: "Southeast Asia", supplierCount: 44 },
       {
         regionId: "europe-turkey-africa",
         region: "Europe, Turkey and Africa",
         supplierCount: 42,
       },
       { regionId: "china", region: "China", supplierCount: 50 },
-      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 32 },
+      { regionId: "india-sri-lanka", region: "India & Sri Lanka", supplierCount: 34 },
       { regionId: "latin-america", region: "Latin America", supplierCount: 39 },
-      { regionId: "us-canada", region: "US and Canada", supplierCount: 50 },
+      { regionId: "us-canada", region: "US and Canada", supplierCount: 59 },
     ]);
     expect(regionalDatasets.map((r) => r.regionId)).toEqual([
       "southeast-asia",
@@ -31,8 +31,8 @@ describe("catalog merge", () => {
   });
 
   it("exports the combined dataset with a matching total", () => {
-    // 254 dataset rows minus the 10 quarantined China rows (41 + 42 + 50 + 32 + 39 + 50 - 10).
-    expect(catalogDataset.totalCount).toBe(244);
+    // 268 dataset rows minus the 10 quarantined China rows (44 + 42 + 50 + 34 + 39 + 59 - 10).
+    expect(catalogDataset.totalCount).toBe(258);
     expect(catalogDataset.suppliers).toHaveLength(catalogSuppliers.length);
     expect(catalogDataset.regionCounts).toEqual([...regionCounts]);
   });

@@ -4750,6 +4750,514 @@
           "retrievedAt": "2026-09-19"
         }
       ]
+    },
+    {
+      "id": "southeast-asia-042",
+      "regionId": "southeast-asia",
+      "name": {
+        "value": "PT Coco Total Sugar Indonesia",
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://coconutsugar.pro/",
+        "source": {
+          "url": "https://coconutsugar.pro/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "PT Coco Total Sugar Indonesia, Jl. Mayor Unus KM 1.5, Magelang, Central Java 56117, Indonesia",
+        "source": {
+          "url": "https://coconutsugar.pro/",
+          "retrievedAt": "2026-09-21",
+          "note": "factory address (contact-page claim, confirmed in site footer)"
+        }
+      },
+      "country": {
+        "value": "Indonesia",
+        "source": {
+          "url": "https://coconutsugar.pro/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": {
+        "value": "Exported from Indonesia to 18+ countries: USA, Canada, UK, Germany, Poland, Australia, Russia, Italy, Bulgaria, Japan, Korea, Singapore, UAE, Turkey, Greece, Spain, France, Netherlands",
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "categories": {
+        "value": [
+          "coconut sugar",
+          "sweeteners"
+        ],
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "natural coconut sugar",
+          "organic coconut sugar",
+          "coconut sugar"
+        ],
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "coconut sugar manufacturer (wholesale-only B2B, no checkout)",
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [
+          {
+            "name": "USDA Organic",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "stated validity May 2027; supplier-published PDF, not registry-verified"
+            }
+          },
+          {
+            "name": "EU Organic",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "stated validity May 2027; supplier-published PDF, not registry-verified"
+            }
+          },
+          {
+            "name": "FSSC 22000",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "stated validity April 2027; supplier-published PDF, not registry-verified"
+            }
+          },
+          {
+            "name": "BRCGS Grade A",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "stated validity March 2027; supplier-published PDF, not registry-verified"
+            }
+          },
+          {
+            "name": "Kosher OU",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "stated validity May 2027; supplier-published PDF, not registry-verified"
+            }
+          },
+          {
+            "name": "Halal MUI",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "stated validity May 2027; supplier-published PDF, not registry-verified"
+            }
+          },
+          {
+            "name": "FDA Registered",
+            "status": "company-stated",
+            "source": {
+              "url": "https://coconutsugar.pro/certificates",
+              "retrievedAt": "2026-09-21",
+              "note": "\"Registered facility for export to United States markets. Valid: Ongoing\"; supplier-published, not registry-verified"
+            }
+          }
+        ],
+        "source": {
+          "url": "https://coconutsugar.pro/certificates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": {
+        "value": "MOQ: 1 ton (1 pallet)",
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "\"Wholesale price from ... $1.80 USD per kg\"",
+          "staleness": "stock line on the same page: \"In Stock — 26 MT Ready for Immediate Shipment — Updated: Jan 2, 2026\"",
+          "note": "incoterms EXW Magelang / FOB Semarang (\"FOB Semarang is most popular\"); \"Transit to USA: 18-35 days\" (Los Angeles, Long Beach)",
+          "source": {
+            "url": "https://coconutsugar.pro/products/natural",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": {
+        "value": "\"In Stock — 26 MT Ready for Immediate Shipment — Updated: Jan 2, 2026\"",
+        "source": {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "Claims 820+ shipments and 8+ years exporting with C13 isotope purity testing via SGS/Eurofins/Intertek (supplier-claimed); homepage states 260 tons/month production capacity and export to 18 countries (USA first on the destination list). All trust claims are self-published.",
+      "sources": [
+        {
+          "url": "https://coconutsugar.pro/products/natural",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://coconutsugar.pro/certificates",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://coconutsugar.pro/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "southeast-asia-043",
+      "regionId": "southeast-asia",
+      "name": {
+        "value": "Cocopany (PT Barooka Global Indonesia)",
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://cocopany.com/",
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "PT Barooka Global Indonesia, AD Premier 9th Floor, Jl. TB Simatupang No. 5 Ragunan, Pasar Minggu, South Jakarta 12550, Indonesia",
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "Indonesia",
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "coconut products"
+        ],
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "virgin coconut oil",
+          "RBD coconut oil",
+          "desiccated coconut",
+          "coconut aminos",
+          "dried copra"
+        ],
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "coconut products supplier/exporter",
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [
+          {
+            "name": "USDA Organic",
+            "status": "company-stated",
+            "source": {
+              "url": "https://cocopany.com/catalog",
+              "retrievedAt": "2026-09-21",
+              "note": "per-line certification label; supplier-claimed"
+            }
+          },
+          {
+            "name": "EU Organic (Control Union ID-BIO-149)",
+            "status": "company-stated",
+            "source": {
+              "url": "https://cocopany.com/catalog",
+              "retrievedAt": "2026-09-21",
+              "note": "per-line certification label; supplier-claimed"
+            }
+          },
+          {
+            "name": "JAS Organic",
+            "status": "company-stated",
+            "source": {
+              "url": "https://cocopany.com/catalog",
+              "retrievedAt": "2026-09-21",
+              "note": "per-line certification label; supplier-claimed"
+            }
+          },
+          {
+            "name": "HACCP",
+            "status": "company-stated",
+            "source": {
+              "url": "https://cocopany.com/catalog",
+              "retrievedAt": "2026-09-21",
+              "note": "per-line certification label; supplier-claimed"
+            }
+          },
+          {
+            "name": "BRCGS",
+            "status": "company-stated",
+            "source": {
+              "url": "https://cocopany.com/catalog",
+              "retrievedAt": "2026-09-21",
+              "note": "per-line certification label; supplier-claimed"
+            }
+          },
+          {
+            "name": "Halal MUI",
+            "status": "company-stated",
+            "source": {
+              "url": "https://cocopany.com/catalog",
+              "retrievedAt": "2026-09-21",
+              "note": "per-line certification label; supplier-claimed"
+            }
+          }
+        ],
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": {
+        "value": "20 MT (\"Min. order\" per catalog line)",
+        "source": {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Virgin Coconut Oil: \"$4,500 to $5,000 per MT\"",
+          "staleness": "\"Prices move with the commodity market and with the season, so treat the ranges below as indicative and ask us for a quotation valid on the day.\" — undated ranges",
+          "source": {
+            "url": "https://cocopany.com/catalog",
+            "retrievedAt": "2026-09-21"
+          }
+        },
+        {
+          "tier": "supplier-published",
+          "value": "RBD Coconut Oil: \"$1,700 to $2,250 per MT\"",
+          "staleness": "\"Prices move with the commodity market and with the season, so treat the ranges below as indicative and ask us for a quotation valid on the day.\" — undated ranges",
+          "source": {
+            "url": "https://cocopany.com/catalog",
+            "retrievedAt": "2026-09-21"
+          }
+        },
+        {
+          "tier": "supplier-published",
+          "value": "Desiccated Coconut: \"$900 to $1,100 per MT\"",
+          "staleness": "ANOMALY — do not use as a current price: this range is far below plausible desiccated-coconut export levels (SEA reference: USD 3,350.00/MT FOB Jakarta, copra.co.id, priced Sep 2025). Re-checked live 2026-09-21 and unchanged; range is undated and self-labeled indicative. Imported per rulebook B8 as published-but-questionable pending a fresh quote check.",
+          "note": "line carries the catalog's 20 MT minimum order",
+          "source": {
+            "url": "https://cocopany.com/catalog",
+            "retrievedAt": "2026-09-21"
+          }
+        },
+        {
+          "tier": "supplier-published",
+          "value": "Coconut Aminos: \"$2,800 per MT\"",
+          "staleness": "\"Prices move with the commodity market and with the season, so treat the ranges below as indicative and ask us for a quotation valid on the day.\" — undated ranges",
+          "source": {
+            "url": "https://cocopany.com/catalog",
+            "retrievedAt": "2026-09-21"
+          }
+        },
+        {
+          "tier": "supplier-published",
+          "value": "Dried Copra: \"$1,350 to $1,450 per MT\"",
+          "staleness": "\"Prices move with the commodity market and with the season, so treat the ranges below as indicative and ask us for a quotation valid on the day.\" — undated ranges",
+          "source": {
+            "url": "https://cocopany.com/catalog",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "International office \"IVARON GOODS INTERNATIONAL LLC, 30 N Gould St Ste R, Sheridan, Wyoming 82801, United States\" — a Sheridan-format registered-agent address; treat as a US legal entity, not a staffed operation. Listed in the Inaexport Indonesian export directory.",
+      "sources": [
+        {
+          "url": "https://cocopany.com/catalog",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://www.inaexport.id/perusahaan/54260-barooka-global-indonesia",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "southeast-asia-044",
+      "regionId": "southeast-asia",
+      "name": {
+        "value": "Viet Nam Cashew Nut Processing Joint Stock Company",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://vietnamcashewco.com/",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "35 Group DT741, Thangloi Farm, Dongphu Ward, Dong Nai, Vietnam",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "corporate headquarters & factory address"
+        }
+      },
+      "country": {
+        "value": "Vietnam",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": {
+        "value": "International markets, including the USA, Europe, and Asia (about-page claim)",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "categories": {
+        "value": [
+          "cashew kernels"
+        ],
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "raw cashew kernels",
+          "roasted cashew kernels",
+          "salt roasted cashew kernels",
+          "cashew pieces"
+        ],
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "cashew processor/exporter",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [
+          {
+            "name": "HACCP",
+            "status": "company-stated",
+            "source": {
+              "url": "https://vietnamcashewco.com/",
+              "retrievedAt": "2026-09-21",
+              "note": "\"our roasted cashew nut factory meet HACCP and ISO 22000 standards\"; supplier-claimed"
+            }
+          },
+          {
+            "name": "ISO 22000",
+            "status": "company-stated",
+            "source": {
+              "url": "https://vietnamcashewco.com/",
+              "retrievedAt": "2026-09-21",
+              "note": "supplier-claimed"
+            }
+          }
+        ],
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "FOB Ho Chi Minh sea port, USD/KG: Vietnam WW160 \"10.4 – 10.7\"; Vietnam WW180 \"9.5 – 9.8\"; Vietnam WW210 \"8.6 – 8.9\"; Vietnam WW240 \"7.5 – 7.8\"; Vietnam WW320 \"7.1 – 7.4\"; SW320 grade 1 \"6.5 – 6.8\"; DW320 grade 1 \"6.2 – 6.5\"; LP grade 1 \"4.8 – 5.0\"; SP grade 1 \"2.85 – 3.15\"; Salt Roasted Cashew A180 \"8.XX usd/kg, Subject to quality\"",
+          "staleness": "table dated 21 MAR 2026 (\"New Crop 2026\", packing 22.68KG (50lbs)/vacuum plastic bag X 1 bag/carton) — beyond the 90-day window; Verify — recheck in progress",
+          "note": "\"Prices is just for your reference, If you have order in details please kindly contact us, we will be glad make an official quotation in details.\" The same market's current (8 Sep 2026) prices are recorded as the region-level SVC International signal.",
+          "source": {
+            "url": "https://vietnamcashewco.com/en/vietnam-cashew-prices/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": {
+        "value": "\"High Capacity: 500 metric tons exporting cashew nut per month\" (supplier-claimed)",
+        "source": {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "HACCP and ISO 22000 supplier-claimed; export desk export@vietnamcashewco.com; OEM/private-label and factory-audit offers on-site",
+      "sources": [
+        {
+          "url": "https://vietnamcashewco.com/en/vietnam-cashew-prices/",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://vietnamcashewco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
     }
   ],
   "priceSignals": [
@@ -4759,10 +5267,10 @@
       "value": "USD 3,350.00/MT, FOB Jakarta",
       "source": {
         "url": "https://copra.co.id/desiccated_coconut.html",
-        "retrievedAt": "2026-09-19"
+        "retrievedAt": "2026-09-21"
       },
-      "note": "trader/processor site",
-      "staleness": "page states 'Last price update: 01 September 2025', valid for Oct-Nov 2025 delivery; specs: >=61% oil, <=3% moisture, SNI 01-3715-2000"
+      "note": "trader/processor site; re-verified live 2026-09-21 with the same dated values displayed",
+      "staleness": "HISTORICAL (2025), not current: page states \"Last price update: 01 September 2025. Valid for delivery period: October - November 2025\" yet displays it as \"Today Price\"; at 12+ months treat as historical evidence of publishing behavior, not a current price (rulebook B8)"
     },
     {
       "ingredient": "High-fat desiccated coconut, medium grain",
@@ -4770,10 +5278,10 @@
       "value": "USD 3,400.00/MT, FOB Jakarta",
       "source": {
         "url": "https://copra.co.id/desiccated_coconut.html",
-        "retrievedAt": "2026-09-19"
+        "retrievedAt": "2026-09-21"
       },
-      "note": "trader/processor site",
-      "staleness": "same page/update as fine grain"
+      "note": "trader/processor site; re-verified live 2026-09-21 with the same dated values displayed",
+      "staleness": "HISTORICAL (2025), not current: page states \"Last price update: 01 September 2025. Valid for delivery period: October - November 2025\" yet displays it as \"Today Price\"; at 12+ months treat as historical evidence of publishing behavior, not a current price (rulebook B8)"
     },
     {
       "ingredient": "Vietnam robusta green coffee beans (2026 crop, Grade A, 60 kg jute)",
@@ -4785,6 +5293,17 @@
       },
       "note": "Alibaba listing by IDD Corporation JSC, Gia Lai, 8 yrs on platform",
       "staleness": "MOQ 60 kg; listing shows 'No reviews yet'"
+    },
+    {
+      "ingredient": "Vietnam cashew kernels (WW180/WW240/WW320/A180/A240/A320), FOB Ho Chi Minh",
+      "tier": "supplier-published",
+      "value": "[SVC Cashew 8th September] FOB Ho Chi Minh • WW180: 9.60 USD/KG • WW240: 7.90 USD/KG • WW320 7.00 USD/kg • A180 8.65 USD/kg • A240 7.70 USD/KG • A320 7.05 USD/KG. Quality: AFI Standards. Packing: 22.68 kgs PE/carton. Delivery: End of September/Early October shipment.",
+      "staleness": "entry dated 8 Sep 2026; page header: \"Latest Vietnam Cashew Kernel Prices | Updated by SVC INTERNATIONAL JSC. From 8 Sep 2026 To Present.\" — current within the 90-day window at access (2026-09-21); weekly archive on page",
+      "note": "Region-level signal, not a supplier-row enrichment: the catalog's SEA slot-6 row is Long Son JSC (longson.com.vn), a distinct company per SVC Group's own market article listing both; SVC International JSC has no catalog row in the approved 14-row net-new scope.",
+      "source": {
+        "url": "https://svc.vn/cashew-price-update-svc-official/",
+        "retrievedAt": "2026-09-21"
+      }
     }
   ],
   "coverageGaps": [

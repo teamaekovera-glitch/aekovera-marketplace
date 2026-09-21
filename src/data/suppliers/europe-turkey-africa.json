@@ -1192,11 +1192,11 @@
       "priceSignals": [
         {
           "tier": "supplier-published",
-          "value": "WPH 80 (Hydrolizat Białka Serwatkowego 80%): 23,700 EUR/MT; WPH 90 (Whey Protein Hydrolysate Isolate 90%): 23,700 EUR/MT; additional listed items ranging 1,120–34,000 EUR/MT",
-          "note": "homepage EUR/MT list, displayed on site",
+          "value": "\"Kup teraz Hydrolizat Białka Serwatkowego 80% (WPH 80) — 23700 EUR/MT\"; \"Hydrolizat Izolatu Białka Serwatkowego 90% (WPH 90) — 23700 EUR/MT\" — the only two homepage tiles with a clean product-price pairing",
+          "note": "B2B trader, not a manufacturer of its own production; other homepage tiles render values without product names in static text (fetch limitation) — recorded only where pairing is clean. Re-verified live 2026-09-21.",
           "source": {
             "url": "https://foodcom.pl/",
-            "retrievedAt": "2026-09-19"
+            "retrievedAt": "2026-09-21"
           }
         }
       ],
@@ -1208,6 +1208,11 @@
         {
           "url": "https://foodcom.pl/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://foodcom.pl/",
+          "retrievedAt": "2026-09-21",
+          "note": "re-verification read"
         }
       ]
     },
