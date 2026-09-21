@@ -27,8 +27,9 @@
       "hq": {
         "value": "Xinchang/Shaoxing area, Zhejiang (group homepage references Xinchang/Shaoxing events, supporting a Zhejiang base)",
         "source": {
-          "url": "https://cnhu.com/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://cnhu.com/about/zh-cn",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "country": {
@@ -157,6 +158,10 @@
         {
           "url": "https://cnhu.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://cnhu.com/about/zh-cn",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -340,7 +345,8 @@
             "status": "company-stated",
             "source": {
               "url": "http://www.nepharm.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -470,8 +476,9 @@
             "name": "IP",
             "status": "company-stated",
             "source": {
-              "url": "http://en.jspcinc.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "http://en.jspcinc.com/about_12",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -522,6 +529,10 @@
         {
           "url": "http://en.jspcinc.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "http://en.jspcinc.com/about_12",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -1132,9 +1143,9 @@
       "name": {
         "value": "JiangXi Tianxin Pharmaceutical Co., Ltd.",
         "source": {
-          "url": "https://www.investing.com",
-          "note": "Investing.com company profile, retrieved via research synthesis",
-          "retrievedAt": "2026-09-19"
+          "url": "http://www.txpharm.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; company's own Chinese-language site names the entity (江西天新药业股份有限公司), verified via secondary crawler."
         }
       },
       "website": {
@@ -1149,7 +1160,7 @@
         "value": "Leping, Jiangxi (per research synthesis)",
         "source": {
           "url": "https://www.investing.com",
-          "note": "directory profile",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit.",
           "retrievedAt": "2026-09-19"
         }
       },
@@ -1157,7 +1168,8 @@
         "value": "China",
         "source": {
           "url": "https://www.investing.com",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -1166,8 +1178,9 @@
           "vitamins & mineral actives"
         ],
         "source": {
-          "url": "https://www.investing.com",
-          "retrievedAt": "2026-09-19"
+          "url": "http://www.txpharm.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; site's product list is vitamin-centered (B6, B1, D3, folic acid, biotin), verified via secondary crawler."
         }
       },
       "ingredients": {
@@ -1225,6 +1238,10 @@
         {
           "url": "https://www.investing.com",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "http://www.txpharm.com/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -1532,7 +1549,8 @@
         ],
         "source": {
           "url": "https://www.unitechzibo.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -1791,7 +1809,8 @@
         ],
         "source": {
           "url": "http://en.sdftyy.com/index.php",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -1950,10 +1969,11 @@
         }
       },
       "website": {
-        "value": "https://en.blb-cn.com/about_us.html",
+        "value": "https://en.blb-cn.com/",
         "source": {
-          "url": "https://en.blb-cn.com/about_us.html",
-          "retrievedAt": "2026-09-19"
+          "url": "https://en.blb-cn.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "Website updated to the live homepage during the 2026-09-21 URL audit; former /about_us.html path returned 404, verified via secondary crawler."
         }
       },
       "hq": {
@@ -1976,8 +1996,9 @@
           "sweeteners"
         ],
         "source": {
-          "url": "https://en.blb-cn.com/about_us.html",
-          "retrievedAt": "2026-09-19"
+          "url": "https://en.blb-cn.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; homepage displays functional-sugar product families (sugar alcohols and new sugar sources; starch and modified starch), verified via secondary crawler."
         }
       },
       "ingredients": {
@@ -2053,6 +2074,10 @@
         {
           "url": "https://en.blb-cn.com/about_us.html",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://en.blb-cn.com/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -2425,28 +2450,32 @@
         "value": "Ningxia Eppen Biotech Co., Ltd.",
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://en.eppen.com.cn/",
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "hq": {
         "value": "Ningxia",
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "country": {
         "value": "China",
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "regionsServed": null,
@@ -2456,7 +2485,8 @@
         ],
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -2470,14 +2500,16 @@
         ],
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "type": {
         "value": "manufacturer (fermentation group; segments in animal nutrition, human nutrition, plant nutrition, and new materials)",
         "source": {
           "url": "https://en.eppen.com.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "certifications": {
@@ -2495,14 +2527,15 @@
           "source": {
             "url": "https://en.eppen.com.cn/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Cited URL redirected to a different company's site (en.sl-eppen.com, Starlake Bioscience) at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       ],
       "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "Medium",
-      "note": "Part of the Eppen group (sister site eppen-biotech.com covers Inner Mongolia Eppen). Certifications not enumerated on the fetched page.",
+      "confidence": "Low",
+      "note": "Part of the Eppen group (sister site eppen-biotech.com covers Inner Mongolia Eppen). Certifications not enumerated on the fetched page. | 2026-09-21 URL audit: cited domain redirects to a different company's site (Starlake Bioscience); identity claims unverified; re-sourcing pending.",
       "sources": [
         {
           "url": "https://en.eppen.com.cn/",
@@ -2538,7 +2571,8 @@
         "value": "China",
         "source": {
           "url": "http://en.foisonpharm.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -2567,7 +2601,8 @@
         "value": "manufacturer",
         "source": {
           "url": "http://en.foisonpharm.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -2625,7 +2660,8 @@
         "value": "Shanghai",
         "source": {
           "url": "https://www.foodchem.cn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "country": {
@@ -2756,7 +2792,8 @@
         ],
         "source": {
           "url": "https://en.rzbc.com/intro/1.html",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -3126,7 +3163,8 @@
         ],
         "source": {
           "url": "https://layncorp.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page via secondary crawler."
         }
       },
       "ingredients": {
@@ -3663,7 +3701,8 @@
         ],
         "source": {
           "url": "https://www.tgybio.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -3689,8 +3728,9 @@
             "name": "GMP",
             "status": "company-stated",
             "source": {
-              "url": "https://www.tgybio.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://www.tgybio.com/products/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -3751,6 +3791,10 @@
         {
           "url": "https://www.tgybio.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.tgybio.com/products/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -4045,8 +4089,9 @@
       "country": {
         "value": "China",
         "source": {
-          "url": "https://www.ganoherb.com/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.ganoherb.com/pages/company-profile",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": {
@@ -4112,7 +4157,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.ganoherb.com/pages/company-profile",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -4736,7 +4782,8 @@
         ],
         "source": {
           "url": "https://www.xingfagroup.com/en/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -5406,14 +5453,16 @@
         "value": "500 kg per product (standard orders); custom formulations typically 1,000 kg minimum",
         "source": {
           "url": "https://www.zxchem.com/plant-proteins/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "samplePolicy": {
         "value": "sample orders 5–25 kg",
         "source": {
           "url": "https://www.zxchem.com/plant-proteins/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "priceSignals": [

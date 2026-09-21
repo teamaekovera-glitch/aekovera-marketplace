@@ -282,7 +282,8 @@
         "value": "cooperative",
         "source": {
           "url": "https://lafloridacac.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -556,8 +557,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.greencoffeeguatemala.com/",
-              "retrievedAt": "2026-09-19",
-              "note": "displayed as logos in homepage certification gallery (image alt text); individual cert scopes not readable — company-displayed, unconfirmed"
+              "retrievedAt": "2026-09-21",
+              "note": "Claim confirmed on this page during the 2026-09-21 URL audit."
             }
           },
           {
@@ -566,7 +567,7 @@
             "source": {
               "url": "https://www.greencoffeeguatemala.com/",
               "retrievedAt": "2026-09-19",
-              "note": "displayed as logos in homepage certification gallery (image alt text); individual cert scopes not readable — company-displayed, unconfirmed"
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -750,7 +751,8 @@
         ],
         "source": {
           "url": "https://flora.com.gt/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -1015,8 +1017,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.volcafe.com/network/brazil",
-              "retrievedAt": "2026-09-19",
-              "note": "stated as schemes the company works under"
+              "retrievedAt": "2026-09-21",
+              "note": "Claim confirmed on this page during the 2026-09-21 URL audit."
             }
           },
           {
@@ -1148,7 +1150,8 @@
         "value": "producer association / cooperative",
         "source": {
           "url": "https://www.fortalezavalle.org/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -1168,7 +1171,7 @@
             "source": {
               "url": "https://www.fortalezavalle.org/",
               "retrievedAt": "2026-09-19",
-              "note": "stated in the dried-cacao product description; certifier not named"
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -1221,8 +1224,9 @@
       "hq": {
         "value": "Km 30 vía Duran–Boliche–Milagro, Recinto El Deseo, Ecuador",
         "source": {
-          "url": "https://unocace.com/nosotros/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://unocace.com/contacto/",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "country": {
@@ -1803,7 +1807,8 @@
         "value": "processor",
         "source": {
           "url": "https://ibcacau.com.br/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -1964,10 +1969,11 @@
         }
       },
       "website": {
-        "value": "https://x-tevia.com.br/en/about-us/",
+        "value": "https://x-tevia.com.br/",
         "source": {
-          "url": "https://x-tevia.com.br/en/about-us/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://x-tevia.com.br/",
+          "retrievedAt": "2026-09-21",
+          "note": "Website updated to the live homepage during the 2026-09-21 URL audit; former /en/about-us/ path returned 404, verified via secondary crawler."
         }
       },
       "hq": {
@@ -2008,7 +2014,8 @@
         "value": "ingredient producer / formulator",
         "source": {
           "url": "https://x-tevia.com.br/en/about-us/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -2038,6 +2045,10 @@
         {
           "url": "https://x-tevia.com.br/en/about-us/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://x-tevia.com.br/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -2095,7 +2106,8 @@
         "value": "brand / processor",
         "source": {
           "url": "https://agavica.com.mx/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -2150,14 +2162,15 @@
         "source": {
           "url": "https://biocmex.com/",
           "retrievedAt": "2026-09-19",
-          "note": "city not stated on retrieved page"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "country": {
         "value": "Mexico",
         "source": {
           "url": "https://biocmex.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; homepage states products are 100% Mexican ('100% mexicano'), verified via secondary crawler."
         }
       },
       "regionsServed": null,
@@ -2167,7 +2180,8 @@
         ],
         "source": {
           "url": "https://biocmex.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; homepage displays agave sweetener product lines (Spanish-language site), verified via secondary crawler."
         }
       },
       "ingredients": {
@@ -2362,7 +2376,8 @@
         ],
         "source": {
           "url": "http://naturalever.mx/english",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -2378,7 +2393,8 @@
         "value": "processor",
         "source": {
           "url": "http://naturalever.mx/english",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -2635,7 +2651,8 @@
         ],
         "source": {
           "url": "https://www.andeantaste.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -2738,7 +2755,8 @@
         ],
         "source": {
           "url": "https://www.superfrutadamazonia.com.br/en/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -2906,14 +2924,15 @@
         "source": {
           "url": "https://www.acaiamazonas.com.br/",
           "retrievedAt": "2026-09-19",
-          "note": "city not stated on retrieved page"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "country": {
         "value": "Brazil",
         "source": {
           "url": "https://www.acaiamazonas.com.br/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": null,
@@ -2923,7 +2942,8 @@
         ],
         "source": {
           "url": "https://www.acaiamazonas.com.br/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -3415,14 +3435,15 @@
         "source": {
           "url": "https://southamfreezedry.com/",
           "retrievedAt": "2026-09-19",
-          "note": "city not stated on retrieved page"
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "country": {
         "value": "Chile",
         "source": {
-          "url": "https://southamfreezedry.com/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.southamfreezedry.com/contact-mexico-chile",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "regionsServed": null,
@@ -3432,7 +3453,8 @@
         ],
         "source": {
           "url": "https://southamfreezedry.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -3479,6 +3501,10 @@
         {
           "url": "https://southamfreezedry.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.southamfreezedry.com/contact-mexico-chile",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -3537,7 +3563,8 @@
         "value": "processor / exporter",
         "source": {
           "url": "https://www.mnl-group.com/en/freeze-dried-maqui-berry-powder",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -3583,35 +3610,40 @@
         "value": "El Buen Temporal",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://elbuentemporal.com/",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "hq": {
         "value": "Fresnillo, Zacatecas (8,000 m² own plant)",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "country": {
         "value": "Mexico",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "regionsServed": {
         "value": "Mexico and United States (stated)",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "categories": {
@@ -3620,7 +3652,8 @@
         ],
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -3631,14 +3664,16 @@
         ],
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "type": {
         "value": "processor / exporter",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "certifications": {
@@ -3649,7 +3684,7 @@
             "source": {
               "url": "https://elbuentemporal.com/",
               "retrievedAt": "2026-09-19",
-              "note": "HACCP referenced on homepage; FDA registration listed — a registration, not a certification"
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -3664,7 +3699,8 @@
         "value": "'Soporte para muestras antes del primer pedido' — sample support before first order (stated)",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "priceSignals": [
@@ -3673,20 +3709,22 @@
           "source": {
             "url": "https://elbuentemporal.com/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       ],
       "capacity": {
         "value": "4,000 tonnes/year (stated)",
         "source": {
           "url": "https://elbuentemporal.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Cited URL no longer served the supplier's site at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "High",
-      "note": "20+ years operating; 100+ direct jobs; BPA-based field sourcing; packaging 25 kg sacks, 10 kg boxes, retail/private-label; FOB, EXW, CIF; documentation for export (stated)",
+      "confidence": "Low",
+      "note": "20+ years operating; 100+ direct jobs; BPA-based field sourcing; packaging 25 kg sacks, 10 kg boxes, retail/private-label; FOB, EXW, CIF; documentation for export (stated) | 2026-09-21 URL audit: cited domain no longer serves the supplier's site; claims annotated unverified pending re-verification.",
       "sources": [
         {
           "url": "https://elbuentemporal.com/",

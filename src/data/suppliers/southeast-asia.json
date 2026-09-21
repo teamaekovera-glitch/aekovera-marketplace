@@ -80,7 +80,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://phucsinh.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -112,7 +113,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://phucsinh.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -120,7 +122,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://phucsinh.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -204,37 +207,28 @@
         "value": "Lien Thanh Company Limited",
         "source": {
           "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://vienthao.vn/",
         "source": {
           "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "Thu Duc City (Thu Duc Agricultural Products Processing Co., Thu Duc Cosmetic & Foods Co., Lien Thanh Two Co.)",
-        "source": {
-          "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "spices exported to Europe, Africa, Middle East, North America, South America; pepper also imported from India/Indonesia/Brazil; coffee markets not listed (unknown)",
-        "source": {
-          "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "coffee",
@@ -243,7 +237,8 @@
         ],
         "source": {
           "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -261,35 +256,13 @@
         ],
         "source": {
           "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "processor / exporter",
-        "source": {
-          "url": "https://vienthao.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://vienthao.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "FDA registration",
-            "status": "company-stated",
-            "source": {
-              "url": "https://vienthao.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://vienthao.vn/",
           "retrievedAt": "2026-09-19"
@@ -303,19 +276,21 @@
           "source": {
             "url": "https://vienthao.vn/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
       "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "High",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://vienthao.vn/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification."
     },
     {
       "id": "southeast-asia-003",
@@ -391,7 +366,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://chusepepper.com.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -399,7 +375,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://chusepepper.com.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -407,7 +384,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://chusepepper.com.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -515,7 +493,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://kssv.com.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -523,7 +502,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://kssv.com.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -531,7 +511,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://kssv.com.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           }
         ],
@@ -576,44 +557,36 @@
         "value": "Vietnam Southern Food Corporation (Visimex)",
         "source": {
           "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://www.visimexcorp.com/",
         "source": {
           "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "72 Le Thanh Ton Street, Ben Nghe Ward, District 1, Ho Chi Minh City",
-        "source": {
-          "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "5-10% of Vietnam's total cashew kernel exports",
-        "source": {
-          "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "cashew"
         ],
         "source": {
           "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -625,99 +598,13 @@
         ],
         "source": {
           "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "manufacturer / exporter",
-        "source": {
-          "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "BRC",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "ISO 9001:2000",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Rainforest Alliance",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "USDA Organic",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "EU Organic",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Halal",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Kosher",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Fair For Life",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Fairtrade",
-            "status": "company-stated",
-            "source": {
-              "url": "https://www.visimexcorp.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://www.visimexcorp.com/",
           "retrievedAt": "2026-09-19"
@@ -731,25 +618,21 @@
           "source": {
             "url": "https://www.visimexcorp.com/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
-      "capacity": {
-        "value": "100,000 MT/year raw cashew intake; ~23,000 MT/year kernel output",
-        "source": {
-          "url": "https://www.visimexcorp.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "High",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://www.visimexcorp.com/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification."
     },
     {
       "id": "southeast-asia-006",
@@ -758,44 +641,36 @@
         "value": "Long Son Joint Stock Company (SVC)",
         "source": {
           "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://longson.com.vn/",
         "source": {
           "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "14 Industrial Park, My Xuan, Phu My Town, Ba Ria - Vung Tau, Vietnam",
-        "source": {
-          "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "4,900 customer/business partners; 5-10% of Vietnam's total cashew kernel exports",
-        "source": {
-          "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "cashew"
         ],
         "source": {
           "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -807,99 +682,13 @@
         ],
         "source": {
           "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "manufacturer / exporter",
-        "source": {
-          "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "BRC",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "ISO 9001:2000",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Rainforest Alliance",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "USDA Organic",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "EU Organic",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Halal",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Kosher",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Fair For Life",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Fairtrade",
-            "status": "company-stated",
-            "source": {
-              "url": "https://longson.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://longson.com.vn/",
           "retrievedAt": "2026-09-19"
@@ -913,25 +702,21 @@
           "source": {
             "url": "https://longson.com.vn/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
-      "capacity": {
-        "value": "100,000 MT/year raw cashew intake; ~23,000 MT/year kernel output",
-        "source": {
-          "url": "https://longson.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "High",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://longson.com.vn/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification."
     },
     {
       "id": "southeast-asia-007",
@@ -940,44 +725,36 @@
         "value": "Cao Nguyen Phu Tho Co., Ltd (CPT)",
         "source": {
           "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://cptsivn.com/",
         "source": {
           "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "4757, National Highway 14, Phu Tho Ward, Phu Hoa District, Phu Yen Province, Vietnam",
-        "source": {
-          "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "market share 5% (Domestic), 10% (Asia), 15% (Europe), 15% (US)",
-        "source": {
-          "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "cashew"
         ],
         "source": {
           "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -987,67 +764,13 @@
         ],
         "source": {
           "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "manufacturer",
-        "source": {
-          "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "ISO 9001:2000",
-            "status": "company-stated",
-            "source": {
-              "url": "https://cptsivn.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "KOSHER",
-            "status": "company-stated",
-            "source": {
-              "url": "https://cptsivn.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "BRC",
-            "status": "company-stated",
-            "source": {
-              "url": "https://cptsivn.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "GMP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://cptsivn.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://cptsivn.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "HALAL",
-            "status": "company-stated",
-            "source": {
-              "url": "https://cptsivn.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://cptsivn.com/",
           "retrievedAt": "2026-09-19"
@@ -1061,25 +784,21 @@
           "source": {
             "url": "https://cptsivn.com/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
-      "capacity": {
-        "value": "productivity 150%, reached 10,000 tons",
-        "source": {
-          "url": "https://cptsivn.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "High",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://cptsivn.com/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification."
     },
     {
       "id": "southeast-asia-008",
@@ -1088,37 +807,28 @@
         "value": "Hanoi Foodstuff And Import Export JSC (Hanfimex)",
         "source": {
           "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://hanfimex.com.vn/",
         "source": {
           "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "No. 2 Yen Xa, Tan Trieu Ward, Thanh Tri District, Hanoi, Vietnam",
-        "source": {
-          "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "export-oriented (no country list — unknown)",
-        "source": {
-          "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "cashew",
@@ -1126,7 +836,8 @@
         ],
         "source": {
           "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -1139,51 +850,13 @@
         ],
         "source": {
           "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "manufacturer / exporter",
-        "source": {
-          "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://hanfimex.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "ISO 9001:2015",
-            "status": "company-stated",
-            "source": {
-              "url": "https://hanfimex.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "KOSHER",
-            "status": "company-stated",
-            "source": {
-              "url": "https://hanfimex.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "FDA",
-            "status": "company-stated",
-            "source": {
-              "url": "https://hanfimex.com.vn/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://hanfimex.com.vn/",
           "retrievedAt": "2026-09-19"
@@ -1197,25 +870,21 @@
           "source": {
             "url": "https://hanfimex.com.vn/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
-      "capacity": {
-        "value": "factories and warehouses in Tay Ninh, Binh Phuoc, Quang Tri (no volumes)",
-        "source": {
-          "url": "https://hanfimex.com.vn/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "Medium-High",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://hanfimex.com.vn/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification."
     },
     {
       "id": "southeast-asia-009",
@@ -1261,7 +930,8 @@
         ],
         "source": {
           "url": "https://vinasamex.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -1271,7 +941,8 @@
         ],
         "source": {
           "url": "https://vinasamex.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "type": {
@@ -1287,8 +958,9 @@
             "name": "HACCP",
             "status": "company-stated",
             "source": {
-              "url": "https://vinasamex.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://vinasamex.com/en/certifications/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -1332,6 +1004,10 @@
         {
           "url": "https://vinasamex.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://vinasamex.com/en/certifications/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -1342,35 +1018,40 @@
         "value": "Dong Anh Import Export Company Limited (DACE)",
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "website": {
         "value": "https://dace.vn/",
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "hq": {
         "value": "Quang Minh Industrial Zone, Me Linh, Hanoi, Vietnam; extended base in Phuoc Thanh Village, An Cuong Commune, Hieu Xuan Area, Xuan Loc District, Dong Nai Province",
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "regionsServed": {
         "value": "markets in Europe, US, Australia, Russia, Singapore, Malaysia, and South Korea",
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "categories": {
@@ -1379,7 +1060,8 @@
         ],
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "ingredients": {
@@ -1391,14 +1073,16 @@
         ],
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "type": {
         "value": "processor / exporter",
         "source": {
           "url": "https://dace.vn/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       },
       "certifications": {
@@ -1408,7 +1092,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://dace.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
             }
           },
           {
@@ -1416,7 +1101,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://dace.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
             }
           },
           {
@@ -1424,7 +1110,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://dace.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
             }
           },
           {
@@ -1432,7 +1119,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://dace.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
             }
           },
           {
@@ -1440,7 +1128,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://dace.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
             }
           },
           {
@@ -1448,7 +1137,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://dace.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
             }
           }
         ],
@@ -1465,19 +1155,21 @@
           "source": {
             "url": "https://dace.vn/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site bot-protected (HTTP 403 to automated access) at the 2026-09-21 URL audit; page exists but the claim was not independently verifiable."
         }
       ],
       "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "High",
+      "confidence": "Medium",
       "sources": [
         {
           "url": "https://dace.vn/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: site bot-protected (HTTP 403 to automated access), not dead; claims retained, unverifiable by audit."
     },
     {
       "id": "southeast-asia-011",
@@ -1552,7 +1244,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://helenacoffee.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -1568,7 +1261,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://helenacoffee.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -1576,7 +1270,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://helenacoffee.vn/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -1628,44 +1323,36 @@
         "value": "Phuoc Son Co., Ltd",
         "source": {
           "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://phuocsoncinnamon.com/",
         "source": {
           "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "Vietnam (Yen Bai / Van Chan cinnamon region; exact address not stated on reviewed page — unknown)",
-        "source": {
-          "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "exports to United States, Europe, India, etc.",
-        "source": {
-          "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "cinnamon"
         ],
         "source": {
           "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -1679,51 +1366,13 @@
         ],
         "source": {
           "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "processor / exporter",
-        "source": {
-          "url": "https://phuocsoncinnamon.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://phuocsoncinnamon.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Organic EU",
-            "status": "company-stated",
-            "source": {
-              "url": "https://phuocsoncinnamon.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "Organic NOP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://phuocsoncinnamon.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          },
-          {
-            "name": "FDA",
-            "status": "company-stated",
-            "source": {
-              "url": "https://phuocsoncinnamon.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://phuocsoncinnamon.com/",
           "retrievedAt": "2026-09-19"
@@ -1737,19 +1386,21 @@
           "source": {
             "url": "https://phuocsoncinnamon.com/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Site unreachable at the 2026-09-21 URL audit (direct fetch and secondary crawler); claim retained as company-stated, unverified."
         }
       ],
       "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "Medium-High",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://phuocsoncinnamon.com/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: supplier site unreachable (direct fetch and secondary crawler); unverifiable claims removed or downgraded per rulebook D10; row pending re-verification."
     },
     {
       "id": "southeast-asia-013",
@@ -1758,37 +1409,28 @@
         "value": "Tam Ngoc Fruits (Tam Ngoc Co., Ltd)",
         "source": {
           "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Domain parked for sale at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "website": {
         "value": "https://tamngoc.com/",
         "source": {
           "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Domain parked for sale at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
-      "hq": {
-        "value": "Ben Luc District, Long An Province, Vietnam",
-        "source": {
-          "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "hq": null,
       "country": {
         "value": "Vietnam",
         "source": {
           "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Domain parked for sale at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
-      "regionsServed": {
-        "value": "export to international markets; markets not listed on reviewed page (unknown)",
-        "source": {
-          "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "regionsServed": null,
       "categories": {
         "value": [
           "fruit powders",
@@ -1796,7 +1438,8 @@
         ],
         "source": {
           "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Domain parked for sale at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
       "ingredients": {
@@ -1811,27 +1454,13 @@
         ],
         "source": {
           "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Domain parked for sale at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       },
-      "type": {
-        "value": "processor",
-        "source": {
-          "url": "https://tamngoc.com/",
-          "retrievedAt": "2026-09-19"
-        }
-      },
+      "type": null,
       "certifications": {
-        "value": [
-          {
-            "name": "HACCP",
-            "status": "company-stated",
-            "source": {
-              "url": "https://tamngoc.com/",
-              "retrievedAt": "2026-09-19"
-            }
-          }
-        ],
+        "value": [],
         "source": {
           "url": "https://tamngoc.com/",
           "retrievedAt": "2026-09-19"
@@ -1845,19 +1474,21 @@
           "source": {
             "url": "https://tamngoc.com/",
             "retrievedAt": "2026-09-19"
-          }
+          },
+          "note": "Domain parked for sale at the 2026-09-21 URL audit; claim retained as company-stated, unverified."
         }
       ],
       "capacity": null,
       "reviewPresence": null,
       "verificationLevel": "Official-site",
-      "confidence": "Medium",
+      "confidence": "Low",
       "sources": [
         {
           "url": "https://tamngoc.com/",
           "retrievedAt": "2026-09-19"
         }
-      ]
+      ],
+      "note": "2026-09-21 URL audit: domain parked for sale; unverifiable claims removed or downgraded per rulebook D10."
     },
     {
       "id": "southeast-asia-014",
@@ -2047,16 +1678,18 @@
             "name": "Organic (scope-based)",
             "status": "company-stated",
             "source": {
-              "url": "https://www.globalcocosugar.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://www.globalcocosugar.com/coconut-product-from-indonesia/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
             "name": "Halal",
             "status": "company-stated",
             "source": {
-              "url": "https://www.globalcocosugar.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://www.globalcocosugar.com/global-coco-sugar-ships-certified-coconut-products-usa-europe/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -2092,6 +1725,14 @@
         {
           "url": "https://www.globalcocosugar.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.globalcocosugar.com/coconut-product-from-indonesia/",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://www.globalcocosugar.com/global-coco-sugar-ships-certified-coconut-products-usa-europe/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -2783,7 +2424,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.multirempahsulawesi.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-21",
+              "note": "Claim confirmed on this page during the 2026-09-21 URL audit."
             }
           },
           {
@@ -3059,8 +2701,9 @@
       "hq": {
         "value": "13-hectare plant at Barrio Pahinga, Candelaria, Quezon Province (~100 km south of Manila); Sorsogon plant; est. June 29, 1946",
         "source": {
-          "url": "https://www.peterpaul.com.ph/",
-          "retrievedAt": "2026-09-19"
+          "url": "https://www.peterpaul.com.ph/about-us",
+          "retrievedAt": "2026-09-21",
+          "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
         }
       },
       "country": {
@@ -3136,6 +2779,10 @@
         {
           "url": "https://www.peterpaul.com.ph/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.peterpaul.com.ph/about-us",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -3319,7 +2966,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.roycefood.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -3327,7 +2975,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.roycefood.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -3343,7 +2992,8 @@
             "status": "company-stated",
             "source": {
               "url": "https://www.roycefood.com/",
-              "retrievedAt": "2026-09-19"
+              "retrievedAt": "2026-09-19",
+              "note": "Company-stated; certification not evidenced on the cited page at the 2026-09-21 URL audit."
             }
           },
           {
@@ -3697,24 +3347,27 @@
             "name": "BRC",
             "status": "company-stated",
             "source": {
-              "url": "http://mscpi.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "http://mscpi.com/about-us/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
             "name": "FSSC 22000",
             "status": "company-stated",
             "source": {
-              "url": "http://mscpi.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "http://mscpi.com/about-us/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
             "name": "HARPC",
             "status": "company-stated",
             "source": {
-              "url": "http://mscpi.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "http://mscpi.com/about-us/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -3756,6 +3409,10 @@
         {
           "url": "http://mscpi.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "http://mscpi.com/about-us/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -3894,7 +3551,8 @@
         "value": "Thailand",
         "source": {
           "url": "https://www.thaiwah.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "regionsServed": {
@@ -3911,7 +3569,8 @@
         ],
         "source": {
           "url": "https://www.thaiwah.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "ingredients": {
@@ -3924,14 +3583,16 @@
         ],
         "source": {
           "url": "https://www.thaiwah.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "type": {
         "value": "manufacturer — 6 tapioca plants in Thailand + 2 invested plants in Tay Ninh, Vietnam",
         "source": {
           "url": "https://www.thaiwah.com/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "certifications": {
@@ -4262,24 +3923,27 @@
             "name": "BRC (A+)",
             "status": "company-stated",
             "source": {
-              "url": "https://erawanfood.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://erawanfood.com/product-categories/coconut-milk/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
             "name": "IFS (Higher Level)",
             "status": "company-stated",
             "source": {
-              "url": "https://erawanfood.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://erawanfood.com/product-categories/coconut-milk/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
             "name": "BSCI",
             "status": "company-stated",
             "source": {
-              "url": "https://erawanfood.com/",
-              "retrievedAt": "2026-09-19"
+              "url": "https://erawanfood.com/product-categories/coconut-milk/",
+              "retrievedAt": "2026-09-21",
+              "note": "Re-sourced during the 2026-09-21 URL audit; claim verified on this page."
             }
           },
           {
@@ -4315,6 +3979,10 @@
         {
           "url": "https://erawanfood.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://erawanfood.com/product-categories/coconut-milk/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     },
@@ -4887,7 +4555,8 @@
         "value": "retail brands across the U.S., Asia and Europe",
         "source": {
           "url": "https://amrurice.com.kh/",
-          "retrievedAt": "2026-09-19"
+          "retrievedAt": "2026-09-19",
+          "note": "Company-stated; claim not displayed on the cited page at the 2026-09-21 URL audit."
         }
       },
       "categories": {
