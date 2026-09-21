@@ -1613,42 +1613,34 @@
       "priceSignals": [
         {
           "tier": "supplier-published",
-          "value": "certified organic fermented $8,660/MT",
-          "staleness": "page shows ICE NY reference $5,924/MT 'Updated: Aug 18 2026'",
-          "note": "indicative FOB USD/MT on-site table; final pricing by grade/volume/incoterm, confirmed by quotation",
+          "value": "Certified Organic Fermented Cocoa Beans — $8,066 (USD/MT; wholesale price block headed \"Dominican Cocoa Beans — Wholesale Price (USD/MT). ICE NY · CC=F Exchange spot: $5,330/MT Updated: Sep 18 2026, 04:00 · yahoo_v8\")",
           "source": {
             "url": "https://santiagococoa.com/",
-            "retrievedAt": "2026-09-19"
+            "retrievedAt": "2026-09-21"
           }
         },
         {
           "tier": "supplier-published",
-          "value": "certified organic unfermented $7,660/MT",
-          "staleness": "page shows ICE NY reference $5,924/MT 'Updated: Aug 18 2026'",
-          "note": "indicative FOB USD/MT on-site table; final pricing by grade/volume/incoterm, confirmed by quotation",
+          "value": "Certified Organic Unfermented Cocoa Beans — $7,066 (USD/MT; wholesale price block headed \"Dominican Cocoa Beans — Wholesale Price (USD/MT). ICE NY · CC=F Exchange spot: $5,330/MT Updated: Sep 18 2026, 04:00 · yahoo_v8\")",
           "source": {
             "url": "https://santiagococoa.com/",
-            "retrievedAt": "2026-09-19"
+            "retrievedAt": "2026-09-21"
           }
         },
         {
           "tier": "supplier-published",
-          "value": "naturally grown fermented $6,760/MT",
-          "staleness": "page shows ICE NY reference $5,924/MT 'Updated: Aug 18 2026'",
-          "note": "indicative FOB USD/MT on-site table; final pricing by grade/volume/incoterm, confirmed by quotation",
+          "value": "Naturally Grown Fermented Cocoa Beans — $6,166 (USD/MT; wholesale price block headed \"Dominican Cocoa Beans — Wholesale Price (USD/MT). ICE NY · CC=F Exchange spot: $5,330/MT Updated: Sep 18 2026, 04:00 · yahoo_v8\")",
           "source": {
             "url": "https://santiagococoa.com/",
-            "retrievedAt": "2026-09-19"
+            "retrievedAt": "2026-09-21"
           }
         },
         {
           "tier": "supplier-published",
-          "value": "naturally grown unfermented $5,800/MT",
-          "staleness": "page shows ICE NY reference $5,924/MT 'Updated: Aug 18 2026'",
-          "note": "indicative FOB USD/MT on-site table; final pricing by grade/volume/incoterm, confirmed by quotation",
+          "value": "Naturally Grown Unfermented Cocoa Beans — $5,206 (USD/MT; wholesale price block headed \"Dominican Cocoa Beans — Wholesale Price (USD/MT). ICE NY · CC=F Exchange spot: $5,330/MT Updated: Sep 18 2026, 04:00 · yahoo_v8\")",
           "source": {
             "url": "https://santiagococoa.com/",
-            "retrievedAt": "2026-09-19"
+            "retrievedAt": "2026-09-21"
           }
         }
       ],
@@ -1661,6 +1653,11 @@
         {
           "url": "https://santiagococoa.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://santiagococoa.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "re-verification read 2026-09-21; price table live-maintained (ICE NY reference updated Sep 18, 2026)"
         }
       ]
     },

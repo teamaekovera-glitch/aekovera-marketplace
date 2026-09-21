@@ -107,7 +107,7 @@ describe("SupplierDiscovery — wired to the real index", () => {
     const seaCount =
       props.initialResponse.facetCounts.region.find((r) => r.value === "Southeast Asia")
         ?.count ?? -1;
-    expect(seaCount).toBe(41); // dataset-level truth from the merge contract
+    expect(seaCount).toBe(44); // dataset-level truth from the merge contract
 
     fireEvent.click(facetCheckbox(container, "Southeast Asia"));
 
@@ -258,7 +258,7 @@ describe("SupplierDiscovery — URL param seeding (landing deep-links)", () => {
     const initialResponse = await client.searchCatalog("", {
       regions: ["Southeast Asia"],
     });
-    expect(initialResponse.totalHits).toBe(41); // dataset-level SEA count
+    expect(initialResponse.totalHits).toBe(44); // dataset-level SEA count
 
     const { container } = render(
       <SupplierDiscovery

@@ -180,7 +180,7 @@ describe("facet filtering", () => {
 
 describe("region entries", () => {
   it("pins the dataset totals the landing page must disclose", () => {
-    expect(catalogDataset.totalCount).toBe(244);
+    expect(catalogDataset.totalCount).toBe(258);
     expect(quarantinedCount(rawRows)).toBe(10);
     expect(regionCounts).toHaveLength(6);
   });

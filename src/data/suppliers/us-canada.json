@@ -873,11 +873,12 @@
       "priceSignals": [
         {
           "tier": "supplier-published",
-          "note": "supplier-published on storefront; specific figures not captured this session",
+          "note": "verbatim product-page prices captured 2026-09-21",
           "source": {
             "url": "https://www.spicejungle.com/",
-            "retrievedAt": "2026-09-19"
-          }
+            "retrievedAt": "2026-09-21"
+          },
+          "value": "Madagascar Bourbon Vanilla Beans \"As low as $12.91\"; Cascabel Chile Peppers $8.01; Chimichurri Blend $6.67; Smoked Peppercorn Sage Rub $6.90; Lemon Juice Powder $6.08; Japanese Yellow Curry Powder $6.71; Ginger Powder $5.93; Onion Minced $6.10; Chipotle Powder Morita $7.27"
         }
       ],
       "capacity": null,
@@ -889,6 +890,11 @@
         {
           "url": "https://www.spicejungle.com/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.spicejungle.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "price capture 2026-09-21"
         }
       ]
     },
@@ -3450,11 +3456,12 @@
       "priceSignals": [
         {
           "tier": "supplier-published",
-          "value": "e.g., L-Theanine Powder from $4.98; Glycine Powder from $2.95; Creatine Monohydrate from $3.44",
+          "value": "Ascorbic Acid Vitamin C: \"Bags / 100 grams - $6.50\", \"Bags / 1 kilogram - $26.95\"; L-Cysteine HCl: \"100 grams - $10.25\", \"1 kilogram - $71.95\"; D-Mannose: \"50 grams - $5.75\", \"500 grams - $40.50\"; Betaine HCl: \"25 kilograms - $546.75\"; Copper Gluconate: \"25kg - $1,224.95\"; Niacinamide: \"25 kilograms - $529.50\"; Tricalcium Phosphate: \"50 pounds - $896.95\"",
           "source": {
             "url": "https://www.purebulk.com/",
-            "retrievedAt": "2026-09-19"
-          }
+            "retrievedAt": "2026-09-21"
+          },
+          "note": "supersedes the 2026-09-19 capture (L-Theanine Powder from $4.98; Glycine Powder from $2.95; Creatine Monohydrate from $3.44) — newer capture of the same tier per rulebook D9"
         }
       ],
       "capacity": null,
@@ -3476,6 +3483,11 @@
         {
           "url": "https://www.trustpilot.com/review/purebulk.com",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.purebulk.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "price re-capture 2026-09-21"
         }
       ]
     },
@@ -3577,12 +3589,13 @@
       },
       "priceSignals": [
         {
-          "tier": "quote-only",
-          "note": "published retail e-commerce pricing (per-unit SKUs); bulk quote-only",
+          "tier": "supplier-published",
+          "note": "retail per-unit SKUs published on product pages (2026-09-21); bulk inquiry pricing remains quote-only",
           "source": {
             "url": "https://www.bulksupplements.com/",
-            "retrievedAt": "2026-09-19"
-          }
+            "retrievedAt": "2026-09-21"
+          },
+          "value": "Zinc Glycinate Powder: \"250 Grams (8.8 oz) - $20.97\", \"500 Grams (1.1 lbs) - $27.97\", \"1 Kilogram (2.2 lbs) - $34.97\"; Phosphatidylserine: \"25 Grams - $18.97\", \"50 Grams - $21.97\", \"100 Grams - $26.97\"; Kelp Extract Powder: $29.97"
         }
       ],
       "capacity": null,
@@ -3604,6 +3617,11 @@
         {
           "url": "https://www.trustpilot.com/review/bulksupplements.com",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.bulksupplements.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "price capture 2026-09-21"
         }
       ]
     },
@@ -5152,6 +5170,903 @@
         {
           "url": "https://www.kerry.com/about",
           "retrievedAt": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-051",
+      "regionId": "us-canada",
+      "name": {
+        "value": "Monterey Bay Herb Co.",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://herbco.com/",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "241 Walker Street, Watsonville, CA 95076",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21",
+          "note": "45,000-square-foot operation in Watsonville, California (first-party about content)"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "herbs",
+          "botanicals",
+          "mushroom powders",
+          "teas"
+        ],
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "bulk herbs",
+          "botanicals",
+          "strawberry leaf",
+          "magnesium citrate powder",
+          "organic chaga mushroom powder",
+          "organic elderberry juice powder",
+          "milk thistle",
+          "rose hips",
+          "blackberry leaf",
+          "kola nut"
+        ],
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "bulk herb and botanical seller (consumer + business, with a 100+ lbs quote-request tier)",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": {
+        "value": "no MOQ stated; published per-unit prices through 1 Pound with a \"100+lbs Quote Request\" tier above the published range",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Strawberry Leaf: \"1/4 Pound: $4.13\", \"Pound: $9.17\"; Magnesium Citrate Powder: \"1/4 Pound: $6.17\", \"Pound: $13.71\"; Organic Chaga Mushroom Powder: \"1/4 Pound: $25.78\", \"Pound: $57.29\"; Organic Elderberry Juice Powder: \"1/4 Pound: $14.20\", \"Pound: $35.51\"",
+          "note": "two-tier published pricing (1/4 Pound / Pound) on product pages; Milk Thistle, Rose Hips, Blackberry Leaf, and Kola Nut pages follow the same two-tier pattern",
+          "source": {
+            "url": "https://herbco.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": {
+        "value": "\"45,000-square-foot operation in Watsonville, California\"",
+        "source": {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "High",
+      "note": "Listed in the first-party SupplySide Global 2025 exhibitor directory (extracted 2026-09-21); site banner: \"Free Shipping On Orders $250+ | 15% Off Orders $600+\". Review platforms returned 403 on the access date; not claimed.",
+      "sources": [
+        {
+          "url": "https://herbco.com/",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://exhibitor.supplysideglobal.com/supplyside-global25/Public/Exhibitors.aspx",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-052",
+      "regionId": "us-canada",
+      "name": {
+        "value": "OliveNation",
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://olivenation.com/",
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "USA (city not stated on retrieved pages)",
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "extracts",
+          "flavors",
+          "cocoa",
+          "baking ingredients"
+        ],
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "blackberry extract",
+          "chocolate flavor powder",
+          "cocoa butter",
+          "coffee extract",
+          "natural flavor extracts",
+          "baking ingredients"
+        ],
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "bakery, brewery and restaurant ingredients supplier (\"Bakery, Brewery & Restaurant Ingredients Supplier\")",
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Blackberry Extract: \"4 fl oz- $9.99\" through \"55 gal- $7053.99\" (55-gal tier re-captured 2026-09-21; captured $7336.99 earlier the same day); Chocolate Flavor Powder: \"4 oz- $17.99\" through \"45 lb- $2081.99\"; Cacao Barry Cocoa Butter: \"8 oz- $28.99\" through \"5 lb- $256.99\"; Coffee Extract: \"4 fl oz- $8.99\" through \"55 gal- $5704.99\"",
+          "note": "retail-to-foodservice size ladders (4 oz to 55-gallon drums); the 55-gal Blackberry Extract tier drifted $7,336.99 to $7,053.99 intra-day and the re-captured value is imported",
+          "source": {
+            "url": "https://www.olivenation.com/blackberry-extract-pg-free-natural.html",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "High",
+      "note": "Wholesale program (\"Wholesale program — More Discounts More Savings\", olivenation.com/wholesale); distributes branded chocolate lines (Callebaut, Valrhona, Barry Callebaut, Cacao Barry, Gertrude Hawk) named in its own brand navigation; shipping page offers \"Free Shipping\", \"Domestic Shipping\", \"International Shipping\", \"Freight/LTL Shipping\", \"On-Site Order Pickup\", \"Customer-Arranged Delivery\" (olivenation.com/shipping, 2026-09-21)",
+      "sources": [
+        {
+          "url": "https://olivenation.com/",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://www.olivenation.com/blackberry-extract-pg-free-natural.html",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://olivenation.com/shipping",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://olivenation.com/wholesale",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-053",
+      "regionId": "us-canada",
+      "name": {
+        "value": "NutriCargo LLC",
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://nutricargo.com/",
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "222 Getty Ave, Clifton, NJ 07011",
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "botanical powders",
+          "superfruits",
+          "spices"
+        ],
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "botanical powders",
+          "chickweed powder",
+          "superfruit powders",
+          "spices"
+        ],
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "wholesale natural-ingredients supplier (\"Quality you can trust since 2011\")",
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Chickweed Powder: \"0.55 LBS (250 G) Add $8.39\", \"1.1 LBS (500 G) Add $21.96\", \"2.2 LBS (1 KG) Add $47.80\", with a displayed \"From $16.80\"",
+          "note": "additive size-selection prices (per-size additions to a base) rather than standalone totals — stored with this qualifier",
+          "source": {
+            "url": "https://nutricargo.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium-High",
+      "note": "\"Need 25kg+ or custom pricing? Contact Sales\" is a bulk-pricing contact channel, not a stated minimum order; \"Free shipping on US orders over $100\" and \"$7.95 flat shipping\" (product page, 2026-09-21). Review platforms returned 403 on the access date.",
+      "sources": [
+        {
+          "url": "https://nutricargo.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-054",
+      "regionId": "us-canada",
+      "name": {
+        "value": "Anthony's Goods",
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://anthonysgoods.com/",
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "820 Thompson, Avenue, Unit 32 Los Angeles, CA 91201 (privacy page; comma placement as published)",
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "flours",
+          "starches",
+          "superfruit powders",
+          "sweeteners"
+        ],
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "blanched almond flour",
+          "organic inulin powder",
+          "organic chicory root granules",
+          "organic buckwheat flour",
+          "organic potato starch",
+          "organic pomegranate juice powder",
+          "organic lemon juice powder"
+        ],
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "direct-to-consumer organic ingredient e-commerce seller",
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Blanched Almond Flour: \"2lb - $21.29\", \"4lb - $33.29\"; Organic Inulin Powder $17.29; Organic Chicory Root Granules $17.29; Organic Buckwheat Flour $20.29; Organic Potato Starch $17.29; Organic Pomegranate Juice Powder $14.29; Organic Lemon Juice Powder $21.29",
+          "source": {
+            "url": "https://anthonysgoods.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium-High",
+      "note": "\"We're at Erewhon! Free standard shipping!\" (anthonysgoods.com/blogs/news, 2026-09-21) — retail placement evidence; second corporate address \"One Parkview Plaza, Suite 500 Oakbrook Terrace, IL 60181\" (shipping-page copyright-agent line). Review platforms blocked on the access date.",
+      "sources": [
+        {
+          "url": "https://anthonysgoods.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-055",
+      "regionId": "us-canada",
+      "name": {
+        "value": "Nuts.com",
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://nuts.com/",
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "125 Moen Street, Cranford, New Jersey 07016",
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "nut flours",
+          "baking flours",
+          "cheese powders",
+          "snack nuts"
+        ],
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "macadamia nut flour",
+          "gluten-free 1-to-1 baking flour",
+          "white cheddar cheese powder",
+          "organic psyllium husk powder",
+          "cocoa-dusted almonds"
+        ],
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "family-owned nuts and baking-ingredients seller with a dedicated bulk/business arm",
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Macadamia Nut Flour: \"1lb bag $16.49\", \"25lb case $309.19\"; Gluten-Free 1-to-1 Baking Flour: \"1lb bag $5.49\", \"25lb case $109.80\"; White Cheddar Cheese Powder: \"1lb bag $14.49\", \"5lb bag $70.28\"; Organic Psyllium Husk Powder: \"1lb bag $15.49\", \"44lb box $545.24\"; Cocoa-Dusted Almonds: \"7oz bag $8.99\", \"13oz bag $13.29\", \"20lb case $255.84\"",
+          "note": "25 lb / 44 lb / 20 lb case tiers with explicit per-case dollars",
+          "source": {
+            "url": "https://nuts.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium-High",
+      "note": "First-party wholesale program (nuts.com/pages/wholesale) and corporate gifting program in navigation; \"Free shipping on contiguous-US orders totaling $59 or more\" (captured 2026-09-21). Review platforms not verifiable on the access date.",
+      "sources": [
+        {
+          "url": "https://nuts.com/",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://nuts.com/pages/wholesale",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-056",
+      "regionId": "us-canada",
+      "name": {
+        "value": "True Nutrition",
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://truenutrition.com/",
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "Vista, California, USA",
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "sports nutrition",
+          "fruit powders",
+          "vegetable powders"
+        ],
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "custom formula blends",
+          "sweet potato powder",
+          "papaya powder",
+          "fruit powders",
+          "vegetable powders"
+        ],
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "custom-formulation sports-nutrition seller (pre-made formula blends and single-ingredient powders by the pound)",
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Female Lean Formula: \"1lb. - $30.50\"; Competitive Overnight Formula: \"1lb. - $25.00\"; Sweet Potato Powder: \"1lb. - $15.50\"; Papaya Powder $31.00",
+          "source": {
+            "url": "https://truenutrition.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "Site banners: \"20% Off Your First Order with Email Sign Up\", \"Free Ground Shipping on Orders $99 & Up! No Code Required\", \"3rd Party Tested\" (2026-09-21). Review platforms blocked on the access date.",
+      "sources": [
+        {
+          "url": "https://truenutrition.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-057",
+      "regionId": "us-canada",
+      "name": {
+        "value": "Prescribed For Life",
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://prescribedforlife.com/",
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "470 Henly Loop, Dripping Springs, TX 78620",
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "nutraceutical powders",
+          "botanical extracts"
+        ],
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "organic jerusalem artichoke inulin",
+          "chrysin",
+          "lemon bioflavonoid",
+          "hops flower extract",
+          "rutin",
+          "celery seed extract",
+          "butternut bark"
+        ],
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "nutraceutical powder and botanical-extract e-commerce seller",
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Organic Jerusalem Artichoke Inulin: \"12 oz (340 g) - $21.99\", \"1 kg (2.2 lb) - $44.99\", \"2 kg (4.4 lb) - $74.99\"; Chrysin: \"2 oz (57 g) - $35.99\"; Lemon Bioflavonoid: \"1 kg (2.2 lb) - $54.99\"; Hops Flower Extract: \"1 kg (2.2 lb) - $45.99\"; Rutin: \"1 kg (2.2 lb) - $166.99\"; Celery Seed Extract: \"1 kg (2.2 lb) - $47.99\"; Butternut Bark: \"1 kg (2.2 lb) - $113.99\"",
+          "source": {
+            "url": "https://prescribedforlife.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "A dedicated shipping-policy page was not re-verified on the access date — shipping claim recorded as Unknown. Review platforms returned 403 on the access date.",
+      "sources": [
+        {
+          "url": "https://prescribedforlife.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-058",
+      "regionId": "us-canada",
+      "name": {
+        "value": "Food To Live",
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://foodtolive.com/",
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "Food to Live, 2769 W 15th Street, Brooklyn, NY 11224",
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "flours",
+          "spices",
+          "organic seeds",
+          "legumes"
+        ],
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "organic fava bean flour",
+          "whole nutmeg",
+          "organic seeds",
+          "legumes",
+          "flours"
+        ],
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "organic flours, seeds, and legumes e-commerce seller",
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Organic Fava Bean Flour: \"12 oz $12.39 $16.52 / lb\", \"1.5 lbs $17.48 $11.65 / lb\"; Whole Nutmeg: \"4 oz $7.37 $29.48 / lb\"",
+          "note": "site displays computed per-pound units alongside package prices",
+          "source": {
+            "url": "https://foodtolive.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "\"Enjoy FREE shipping on orders $35+ · Just $4.99 if less\" (2026-09-21). Review platforms returned 403 on the access date.",
+      "sources": [
+        {
+          "url": "https://foodtolive.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "us-canada-059",
+      "regionId": "us-canada",
+      "name": {
+        "value": "Hoosier Hill Farm",
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://hoosierhillfarm.com/",
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "Midwest USA (city not stated on retrieved pages)",
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "USA",
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": null,
+      "categories": {
+        "value": [
+          "dairy powders",
+          "thickeners",
+          "baking mixes"
+        ],
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "whole milk powder",
+          "agar agar powder",
+          "big daddy mac mix",
+          "chocolate ice cream mix"
+        ],
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "specialty ingredients e-commerce seller (\"Dairy powders, thickeners, canning essentials, and more\") with a wholesale program",
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Whole Milk Powder \"From $14.99\"; Agar Agar Powder \"From $19.99\"; Big Daddy Mac Mix $16.99; Chocolate Ice Cream Mix \"From $24.99\" and \"$11.29 / per lb\"",
+          "note": "from-prices as displayed",
+          "source": {
+            "url": "https://hoosierhillfarm.com/",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "\"Wholesale Orders (25 LB) ship within 21 business days\" (wholesale program page); \"FREE SHIPPING. EVERY ITEM. EVERY TIME.\" (site banner). Weakest filter-3 evidence of the twelve e-commerce sellers — review platforms unreachable 2026-09-21.",
+      "sources": [
+        {
+          "url": "https://hoosierhillfarm.com/",
+          "retrievedAt": "2026-09-21"
         }
       ]
     }

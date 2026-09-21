@@ -63,7 +63,7 @@ describe("Quarantine — dataset contract", () => {
   it("keeps dataset-level China counts honest (50) while serving zero China rows", async () => {
     const china = regionCounts.find((entry) => entry.region === "China");
     expect(china?.supplierCount).toBe(50);
-    expect(visibleIds.size).toBe(244); // 254 research rows − 10 withheld
+    expect(visibleIds.size).toBe(258); // 268 research rows − 10 withheld
   });
 });
 

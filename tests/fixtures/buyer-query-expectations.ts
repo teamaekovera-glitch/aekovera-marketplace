@@ -8,7 +8,7 @@
  * and guarded by tests: every anchor must be a token of its query, and no
  * anchor may be a bare number.
  *
- * Baseline: the final six-region catalog (254 dataset rows, 244 exported).
+ * Baseline: the final six-region catalog (268 dataset rows, 258 exported).
  * Each anchor was verified against the records that actually carry the
  * substance token in an indexed field. Queries no row can answer are
  * explicitly registered as empty states with a coverage-gap justification —
@@ -18,7 +18,7 @@
  */
 
 const gap = (substance: string): string =>
-  `No row in the merged six-region catalog (254 dataset rows, 244 exported) names ${substance}; registered as an explicit empty state for marketplace v1.`;
+  `No row in the merged six-region catalog (268 dataset rows, 258 exported) names ${substance}; registered as an explicit empty state for marketplace v1.`;
 
 export interface QueryExpectation {
   query: string;

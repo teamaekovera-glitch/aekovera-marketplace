@@ -12,7 +12,7 @@ import { categoryEntries, regionEntries, taxonomyStats } from "@/lib/taxonomy";
  * Landing page for Ingredient Marketplace v1 (spec F-01): search-first entry,
  * live counts computed from the dataset at build time — never hardcoded —
  * and region/category entry points. The suppliers headline counts the full
- * research corpus (spec route row: "254 suppliers · 33 categories · 6
+ * research corpus (spec route row: "268 suppliers · 33 categories · 6
  * regions"); quarantined rows are never counted among listed suppliers, and
  * the listed/withheld split is disclosed explicitly below the strip.
  */

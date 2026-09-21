@@ -2573,8 +2573,8 @@
           "note": "Published price for Fine White Rice Flour on the company's own product page. The page is an IndiaMART-format profile served on the company's own domain — supplier-published, not marketplace-listed.",
           "source": {
             "url": "https://www.angelstarchandfood.com/rice-flour.html",
-            "retrievedAt": "2026-09-19",
-            "note": "Official site (T1)"
+            "retrievedAt": "2026-09-21",
+            "note": "re-verified live 2026-09-21; value unchanged — \"Approx. Rs 41 / Kg\" on Fine White Rice Flour for Noodles and Extruded Snacks and Gluten Free Rice Flour for Bakery and Snacks; \"Minimum Order Quantity | 500 Kg\""
           }
         }
       ],
@@ -2597,6 +2597,11 @@
         {
           "url": "https://www.angelstarchandfood.com/rice-flour.html",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.angelstarchandfood.com/rice-flour.html",
+          "retrievedAt": "2026-09-21",
+          "note": "re-verification read"
         }
       ]
     },
@@ -4114,6 +4119,291 @@
         {
           "url": "https://www.goldencinnamon.com/",
           "retrievedAt": "2026-09-19"
+        }
+      ]
+    },
+    {
+      "id": "india-sri-lanka-033",
+      "regionId": "india-sri-lanka",
+      "name": {
+        "value": "Shreeji Global FMCG Limited",
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://shreejifmcg.com/",
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "1205, The Spire, 150 Feet Ring Road, Near Ayodhya Circle, Rajkot, Gujarat-360005 (IN)",
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21",
+          "note": "site footer"
+        }
+      },
+      "country": {
+        "value": "India",
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": {
+        "value": "CIF basis to all major ports across the globe (price-page offer)",
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "categories": {
+        "value": [
+          "spices",
+          "oil seeds",
+          "pulses",
+          "flours"
+        ],
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "cumin seed",
+          "coriander seed",
+          "turmeric powder",
+          "red chilli powder",
+          "fennel seed",
+          "fenugreek seed",
+          "sesame seed",
+          "chia seed",
+          "kalonji seed",
+          "chickpea (chana)",
+          "ground spices",
+          "flours"
+        ],
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "spices, oil seeds and pulses exporter (NSE SME listed)",
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [],
+        "source": {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": null,
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "Indicative FOB Port Mundra, USD/MT in standard packaging: Cumin Seed Singapore 99 \"USD 2385\"; Cumin Seed Europe 99 \"USD 2485\"; Coriander Seed Eagle \"USD 1740\"; Turmeric Powder 3% Curcumin \"USD 1860\"; Red Chilli Powder A Grade \"USD 3680\"; Red Chilli Powder D Grade Gulf \"USD 1540\" (14 Sep 2026 row); Fennel Seed Singapore \"USD 1305\"; Fenugreek Seed Super \"USD 800\"; Sesame Seed Natural \"USD 1585\"; Chia Seed Double Sortex (99.70%) \"USD 2110\"; Kalonji Seed Sortex \"USD 2430\"; Chickpea (Chana) White 42/44 \"USD 1175\"",
+          "staleness": "table rows dated 14-16 Sep 2026; page preamble: \"Below are indicative FOB prices for Port Mundra, USD/MT in standard Packaging of respective commodity; we can offer customized packing and CIF basis also to all major ports across glob\"",
+          "source": {
+            "url": "https://shreejifmcg.com/price-updates",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site + association context",
+      "confidence": "High",
+      "note": "Publicly listed on India's NSE (SME) — ticker SHETHJI (Bitget stock overview, 25 Jun 2026); Gulfood 2026 exhibitor (first-party directory); SEAIR US-import trail (secondary aggregator, not proof of brand customers); certificates page exists but was not fetched — cert claims unverified",
+      "sources": [
+        {
+          "url": "https://shreejifmcg.com/price-updates",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://www.gulfood.com/exhibitors/shreeji-global-fmcg-limited",
+          "retrievedAt": "2026-09-21"
+        },
+        {
+          "url": "https://www.seair.co.in/us-import/e-shreeji-global-fmcg-limited.aspx",
+          "retrievedAt": "2026-09-21"
+        }
+      ]
+    },
+    {
+      "id": "india-sri-lanka-034",
+      "regionId": "india-sri-lanka",
+      "name": {
+        "value": "Radiance Overseas",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "website": {
+        "value": "https://www.radianceoverseas.com/",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "hq": {
+        "value": "60, Silver Oaks, Annapurna Road, Indore MP 452009, India",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "country": {
+        "value": "India",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "regionsServed": {
+        "value": "30+ Export Countries (page stat)",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "categories": {
+        "value": [
+          "spices",
+          "rice",
+          "coffee",
+          "oil seeds",
+          "pulses",
+          "dehydrated products",
+          "herbs"
+        ],
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "ingredients": {
+        "value": [
+          "turmeric",
+          "cumin seeds (jeera)",
+          "black pepper",
+          "red chilli",
+          "green cardamom",
+          "coriander seeds",
+          "fennel seeds",
+          "ashwagandha",
+          "moringa",
+          "psyllium",
+          "stevia",
+          "rice",
+          "coffee",
+          "soy products"
+        ],
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "type": {
+        "value": "vertically integrated organic agro-product export house",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "certifications": {
+        "value": [
+          {
+            "name": "Spices Board RCMC",
+            "status": "company-stated",
+            "source": {
+              "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+              "retrievedAt": "2026-09-21",
+              "note": "supplier-claimed on the wholesale-spices page; not registry-verified"
+            }
+          },
+          {
+            "name": "APEDA registered",
+            "status": "company-stated",
+            "source": {
+              "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+              "retrievedAt": "2026-09-21",
+              "note": "supplier-claimed; not registry-verified"
+            }
+          },
+          {
+            "name": "USDA NOP",
+            "status": "company-stated",
+            "source": {
+              "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+              "retrievedAt": "2026-09-21",
+              "note": "supplier-claimed; not registry-verified"
+            }
+          },
+          {
+            "name": "EU Organic",
+            "status": "company-stated",
+            "source": {
+              "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+              "retrievedAt": "2026-09-21",
+              "note": "supplier-claimed; not registry-verified"
+            }
+          },
+          {
+            "name": "ISO 9001:2015",
+            "status": "company-stated",
+            "source": {
+              "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+              "retrievedAt": "2026-09-21",
+              "note": "supplier-claimed; not registry-verified"
+            }
+          }
+        ],
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "moq": {
+        "value": "1 MT Min. Order",
+        "source": {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
+        }
+      },
+      "samplePolicy": null,
+      "priceSignals": [
+        {
+          "tier": "supplier-published",
+          "value": "FOB Price Range (USD/MT), FOB Nhava Sheva (Mumbai) / Mundra for FY 2025–26: Turmeric \"$1,800 – $3,200\"; Cumin Seeds (Jeera) \"$3,200 – $4,500\"; Black Pepper \"$6,800 – $10,500\"; Red Chilli \"$1,400 – $2,800\"; Green Cardamom \"$18,000 – $35,000\"; Coriander Seeds \"$1,200 – $1,800\"; Fennel Seeds \"$1,600 – $2,200\"",
+          "staleness": "undated ranges — no on-page timestamp; Verify-against-refresh; \"Prices are indicative FOB Nhava Sheva (Mumbai) / Mundra for FY 2025–26. Organic premium: +20–35% over conventional. Subject to market fluctuation.\"",
+          "note": "FAQ grade splits: \"Alleppey Turmeric (3–5% curcumin): $2,400–$3,200/MT FOB — premium nutraceutical and EU/USA food grade; Erode Turmeric (2–3% curcumin): $1,800–$2,400/MT FOB\"",
+          "source": {
+            "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+            "retrievedAt": "2026-09-21"
+          }
+        }
+      ],
+      "capacity": null,
+      "reviewPresence": null,
+      "verificationLevel": "Official-site",
+      "confidence": "Medium",
+      "note": "Filter-2 partial: marketing evidence is self-published (content/SEO price-guide program); testimonials anonymous (\"Food Distributor, USA\"); no trade-show or press found. US phone line \"+1 469 544 9746\" and FSMA/FDA-documentation claims are supplier-published; no shipment-level proof.",
+      "sources": [
+        {
+          "url": "https://www.radianceoverseas.com/indian-spices-wholesale.html",
+          "retrievedAt": "2026-09-21"
         }
       ]
     }

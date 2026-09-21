@@ -632,7 +632,8 @@
           "note": "port Shanghai, MOQ 1 kg, supply 20 MT/quarter — published on the company's own product page",
           "source": {
             "url": "https://www.newelementbio.com/vitamins/",
-            "retrievedAt": "2026-09-19"
+            "retrievedAt": "2026-09-21",
+            "note": "re-verified live 2026-09-21; value unchanged — \"Vitamin D3 Powder — CAS:67-97-0 — FOB Price:10 USD/KG — Port:Shanghai — Minimum Order Quantity:1 KG — Supply Ability:20 MT/Quarter\" (official-site tier, Tier 1)"
           }
         }
       ],
@@ -650,6 +651,11 @@
         {
           "url": "https://www.newelementbio.com/vitamins/",
           "retrievedAt": "2026-09-19"
+        },
+        {
+          "url": "https://www.newelementbio.com/vitamins/",
+          "retrievedAt": "2026-09-21",
+          "note": "re-verification read"
         }
       ]
     },
