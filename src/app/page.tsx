@@ -5,14 +5,16 @@ import { SearchEntryForm } from "@/components/browse/search-entry-form";
 import { StatStrip } from "@/components/catalog/stat-strip";
 import { buttonVariants } from "@/components/ui/button";
 import { quarantinedCount } from "@/lib/catalog/display";
-import { catalogSuppliers, catalogDataset, regionCounts, regionalDatasets } from "@/lib/catalog/merge";
+import { catalogSuppliers, regionCounts, regionalDatasets } from "@/lib/catalog/merge";
 import { categoryEntries, regionEntries, taxonomyStats } from "@/lib/taxonomy";
 
 /**
  * Landing page for Ingredient Marketplace v1 (spec F-01): search-first entry,
- * live counts computed from the merged catalog at build time — never
- * hardcoded — and region/category entry points. Quarantined rows are never
- * counted among listed suppliers; their withholding is disclosed explicitly.
+ * live counts computed from the dataset at build time — never hardcoded —
+ * and region/category entry points. The suppliers headline counts the full
+ * research corpus (spec route row: "254 suppliers · 33 categories · 6
+ * regions"); quarantined rows are never counted among listed suppliers, and
+ * the listed/withheld split is disclosed explicitly below the strip.
  */
 
 export const metadata: Metadata = {
@@ -58,7 +60,7 @@ export default function LandingPage() {
                 Ingredient suppliers, in one place
               </h1>
               <p className="mt-4 max-w-2xl text-lg text-muted-foreground">
-                A provenance-first catalog of {catalogDataset.totalCount} suppliers across{" "}
+                A provenance-first catalog of {allRows.length} suppliers across{" "}
                 {regionCounts.length} regions. Every claim links to the page it was read
                 from, with the date we read it and a confidence rating — nothing is
                 presented as verified until a registry says so.
@@ -74,14 +76,15 @@ export default function LandingPage() {
         <section className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
           <StatStrip
             stats={[
-              { value: catalogDataset.totalCount, label: "Suppliers listed" },
+              { value: allRows.length, label: "Suppliers researched" },
               { value: regionCounts.length, label: "Regions" },
               { value: stats.categoryCount, label: "Ingredient categories" },
               { value: stats.subtypeCount, label: "Taxonomy subtypes tracked" },
             ]}
           />
           <p data-testid="withheld-note" className="mt-3 text-xs text-muted-foreground">
-            Counts are computed from the published catalog at build time.
+            Counts are computed from the research corpus at build time.{" "}
+            {catalogSuppliers.length} suppliers are listed.
             {withheldRows > 0
               ? ` ${withheldRows} supplier rows are withheld pending verification and are not listed or searchable.`
               : ""}
